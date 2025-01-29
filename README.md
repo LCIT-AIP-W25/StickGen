@@ -5,8 +5,6 @@
 ## Overview
 This project builds a **real-time pipeline** for scraping, analyzing news articles, detecting trends/topics, and generating **stickers and emojis** to enhance social media engagement. Users can search, analyze, and share trending content via an **intuitive UI**.
 
-![News Analysis System](https://www.datamation.com/wp-content/uploads/2022/02/big-data-analytics.png)
-
 ## Features
 
 ### 📡 Real-Time News Scraping and Ingestion  
@@ -27,8 +25,6 @@ This project builds a **real-time pipeline** for scraping, analyzing news articl
 - Uses **Diffusion models & GANs** to create stickers.
 - Generates **emojis** from text sentiment & topics.
 - **Dataset sources**: [Anonymous0722](https://anonymous0722.github.io/), [OpenMoji](https://openmoji.org/), [Twemoji](https://uvaauas.figshare.com/articles/dataset/Twemoji_Dataset/5822100).
-
-![Emoji Sample](https://openmoji.org/data/color/svg/1F604.svg)
 
 ### 🕵️‍♂️ Smart Search Functionality  
 - **Faceted search, full-text search, synonym detection** (via Elasticsearch).
