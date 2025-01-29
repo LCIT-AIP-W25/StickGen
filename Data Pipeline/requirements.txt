@@ -1,0 +1,6 @@
+beautifulsoup4
+kafka-python
+pymongo
+requests
+selenium
+webdriver-manager  # Optional but recommended
