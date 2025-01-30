@@ -1,0 +1,94 @@
+/***** header ******/
+body{font-family: 'Merriweather', serif;}
+.header-section {
+    color: white;
+  }
+  
+  .header-home {
+    background-color: transparent;
+    position: absolute;width:100%;
+  }
+  
+  .header-other {
+    background-color: lightblue; 
+  }
+  li.nav-item {
+    margin-left: 2rem;
+  }
+  .nav-link {
+    font-size: 1.2rem;
+    padding: 0.5rem;color:#991F0A;font-weight: bold;
+  }
+  
+  .nav-link:focus, .nav-link:hover{
+    color: #004557;
+  }
+
+
+/***** homepage *******/
+.main-content{
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 4rem;
+  }
+  .main-page{height: 100vh;
+    background-size: 50% !important;
+    background-position: bottom !important;
+    background-color: #7fd5d9eb !important;
+    background-repeat: no-repeat !important;padding-top:4rem;
+  }
+  .main-content h1{font-size: 72px;
+    font-weight: bold;
+    margin-bottom: 20px;}
+  .main-content button{width: 10%;
+    font-size: 27px;
+    text-transform: uppercase;
+    border: 2px solid white;}
+
+
+/****** about page ******/
+.card {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card-body {
+    padding: 1.25rem;
+  }
+  
+  .card .hover-details {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+  }
+  
+  .card:hover .hover-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    flex-direction: column;
+    opacity: 1;
+  }
+  
+  .card:hover .card-title,
+  .card:hover .card-text {
+    color: white;
+  }
+
+  .about-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+  
