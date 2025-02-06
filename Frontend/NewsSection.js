@@ -233,7 +233,7 @@ const NewsSection = () => {
           <div className="text-center">
             <div className="emoji-container my-4">
               <img 
-                src="test.png" style={{ width: '400px', height: '200px' }}
+                src="test.png" style={{ width: '300px', height: '300px' }}
                 alt="emoji" 
                 ref={imageRef} // Attach the ref to the image element
               />
