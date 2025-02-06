@@ -1,76 +1,121 @@
-// About.js
 import React from 'react';
 
-
 const About = () => {
-  const teamMembers = [
-    { 
-      name: 'Dharmilkumar Nileshkumar Patel', 
-      role: 'Project Manager', 
-      photo: '/images/person_1.svg', 
-      description: 'Alice is an experienced project manager with 10 years in the field.' 
-    },
-    { 
-      name: 'Virpal Kaur', 
-      role: 'Frontend Developer', 
-      photo: '/images/person_2.svg', 
-      description: 'Virpal kaur is a skilled full-stack developer who loves designing with 7 years of experience.' 
-    },
-    { 
-      name: 'Jitender Kaushik', 
-      role: 'Quality Assurance', 
-      photo: '/images/person_1.svg', 
-      description: 'Charlie creates intuitive designs that enhance user experience.' 
-    },
-    { 
-      name: 'Mohamed Ayan Mohamed Arif Khatri', 
-      role: 'Data Engineer', 
-      photo: '/images/person_1.svg', 
-      description: 'Alice is an experienced project manager with 10 years in the field.' 
-    },
-    { 
-      name: 'Kevinsinh Manojsinh Raj', 
-      role: 'Backend Developer', 
-      photo: '/images/person_1.svg', 
-      description: 'Bob is a skilled full-stack developer who loves solving complex problems.' 
-    },
-    { 
-      name: 'Dharmikkumar Nareshbhai Bhatt', 
-      role: 'AI/ML Specialist', 
-      photo: '/images/person_1.svg', 
-      description: 'Charlie creates intuitive designs that enhance user experience.' 
-    },
-  ];
-
   return (
-    <main className="about-section bg-light min-vh-100">
-      <div class="container">
-        <h1 className="display-4 text-center">About Us</h1>
-        <p className="mt-3 text-secondary text-center">Meet our amazing team dedicated to delivering exceptional results.</p>
+    <div className="about-page">
+      <div className="container">
+      {/* About Us Section */}
+      <div className="about-section text-center mt-5">
+        <br/><h2><b>About Us</b></h2><br/>
+        <p>Our team consists of passionate developers, data scientists, and designers working together to build the 
+          Real-Time News Analysis and Social Media Engagement System. With a combination of skills in backend development, 
+          AI/ML modeling, data processing, and frontend design, we aim to create a unique solution that connects real-time 
+          news with social media engagement. We use advanced tools like Kafka, Elasticsearch, and Redis to ensure efficient
+           data handling and trend detection. By integrating AI-driven sticker and emoji generation, our platform enhances 
+           user interaction with news and trends. Together, we’re focused on delivering an innovative, engaging experience for 
+           users worldwide.
+        </p>
+      </div><br/><br/>
+      <hr/>
+      {/* Our Technology Section */}
+      <div className="technology-section mt-5">
+        <h3><b>Our Technology</b></h3>
+        <p>Cutting-edge solutions powered by artificial intelligence</p>
 
-        <div className="row mt-5 justify-content-center">
-          {teamMembers.map((member, index) => (
-            <div key={index} className="col-md-4 justify-content-center mb-4">
-              <div className="card team-card text-center shadow-sm" style={{ borderRadius: '10px' }}>
-                <img
-                  src={member.photo}
-                  alt={member.name}
-                  className="card-img-top rounded-circle mt-3"
-                  style={{ width: '100px', height: '100px', margin: '0 auto' }}
-                />
-                <div className="card-body">
-                  <h5 className="card-title mb-1">{member.name}</h5>
-                  <p className="card-text text-muted mb-2">{member.role}</p>
-                  <div className="hover-details">
-                    <p className="hover-desc">{member.description}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
+        <div className="features">
+          <div className="feature">
+            <span><i className="fa">AI</i></span>
+            <h3>AI-Powered Analysis</h3>
+            <p>Advanced machine learning algorithms for real-time news analysis and trend detection.</p>
+          </div>
+          <div className="feature">
+            <span><i className="fa fa-rocket" aria-hidden="true"></i></span>
+            <h3>Instant Generation</h3>
+            <p>Generate engaging stickers and social media content in seconds.</p>
+          </div>
+          <div className="feature">
+            <span><i className="fa fa-code" aria-hidden="true"></i></span>
+            <h3>Robust Architecture</h3>
+            <p>Built with scalable, modern technologies for reliable performance.</p>
+          </div>
+          <div className="feature">
+            <span><i className="fa fa-bolt" aria-hidden="true"></i></span>
+            <h3>Real-time Updates</h3>
+            <p>Stay current with instant news updates and trend analysis.</p>
+          </div>
         </div>
       </div>
-    </main>
+      <hr/>
+      <div className="team-section mt-5 mb-5">
+        <h3 className="text-center"><b>Meet Our Team</b></h3>
+        <p className="text-center ">Passionate experts dedicated to revolutionizing news consumption</p>
+        <div className="features">
+          <div className="feature">
+            <h3>Dharmilkumar</h3>
+            <a href="/">Project Manager</a>
+            <p>Responsible for overseeing the project’s overall development, managing timelines, and ensuring 
+              tasks are completed efficiently. Also lead the backend architecture design, coordinate team collaboration, 
+              and ensure the quality of work across all areas and includes risk management and presenting the 
+              final outcomes to stakeholders.</p>
+            <span>
+              <a href="/"><i className="fa fa-twitter"></i></a>
+              <a href="/"><i className="fa fa-linkedin"></i></a>
+            </span>
+          </div>
+          <div className="feature">
+            <h3>Virpal Kaur</h3>
+            <a href="/">Frontend Developer</a>
+            <p>Leading the design and implementation of the user interface using React.js, ensuring that the system is intuitive and responsive for users to search, filter, and share content.</p>
+            <span>
+              <a href="/"><i className="fa fa-twitter"></i></a>
+              <a href="/"><i className="fa fa-linkedin"></i></a>
+            </span>
+          </div>
+          <div className="feature">
+            <h3>Kevinsinh</h3>
+            <a href="/">Backend Developer</a>
+            <p>Responsible for designing and implementing the Kafka-based pipeline, MongoDB integration, 
+              and Elasticsearch configuration for efficient data handling and retrieval.</p>
+            <span>
+              <a href="/"><i className="fa fa-twitter"></i></a>
+              <a href="/"><i className="fa fa-linkedin"></i></a>
+            </span>
+          </div>
+          <div className="feature">
+            <h3>Dharmikkumar</h3>
+            <a href="/">AI/ML Specialist</a>
+            <p>Focused on developing the trend detection models using topic modeling techniques 
+              and generating stickers/emojis based on detected trends and sentiments.</p>
+            <span>
+              <a href="/"><i className="fa fa-twitter"></i></a>
+              <a href="/"><i className="fa fa-linkedin"></i></a>
+            </span>
+          </div>
+          <div className="feature">
+            <h3>Ayan Mohamed</h3>
+            <a href="/">Data Engineer</a>
+            <p>Responsible for designing and implementing the Kafka-based pipeline, MongoDB integration, 
+            and Elasticsearch configuration for efficient data handling and retrieval.</p>
+            <span>
+              <a href="/"><i className="fa fa-twitter"></i></a>
+              <a href="/"><i className="fa fa-linkedin"></i></a>
+            </span>
+          </div>
+          <div className="feature">
+            <h3>Jitender Kaushik</h3>
+            <a href="/">Quality Assurance</a>
+            <p>Responsible for deploying the system using Docker, implementing CI/CD pipelines with Jenkins, 
+              and ensuring smooth system performance during stress testing.</p>
+            <span>
+              <a href="/"><i className="fa fa-twitter"></i></a>
+              <a href="/"><i className="fa fa-linkedin"></i></a>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </div>
   );
 };
 
