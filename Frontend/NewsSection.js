@@ -1,11 +1,9 @@
 import React, { useState, useRef } from 'react';
-import { Row, Col, Modal } from 'react-bootstrap';
+import { Row, Col, Modal, Pagination } from 'react-bootstrap';
 import TrendingTopics from './TrendingTopics';
 import SearchBar from './SearchBar';
 import { FacebookShareButton, FacebookIcon, WhatsappShareButton, WhatsappIcon} from 'react-share';
 import { FaInstagram } from 'react-icons/fa';
-
-
 
 const NewsSection = () => {
   // const [emojiUrl, setEmojiUrl] = useState('');
@@ -44,6 +42,28 @@ const NewsSection = () => {
   const closeShareModal = () => {
     setShowShareModal(false);
   };
+
+  // Pagination Logic
+  const allNews = [
+    { title: 'Major Tech Company Announces Revolutionary AI Product', content: 'In a groundbreaking announcement today, the tech giant revealed their latest artificial intelligence innovation that promises to transform how we interact with technology...' },
+    { title: 'Global Climate Summit Reaches Historic Agreement', content: 'World leaders have come together to sign a landmark climate accord that sets ambitious targets for reducing carbon emissions over the next decade...' },
+    { title: 'New Mobile App Disrupts E-commerce Industry', content: 'A new mobile app has emerged as a game-changer in the world of online shopping, offering a seamless experience for users and redefining the e-commerce landscape...' },
+    { title: 'SpaceX Launches Historic Mission to Mars', content: 'SpaceX has successfully launched its first crewed mission to Mars, marking a new era in space exploration and paving the way for future human colonization of the Red Planet...' },
+    { title: 'Breakthrough in Cancer Treatment Offers New Hope', content: 'Scientists have made a significant breakthrough in cancer treatment, discovering a novel therapy that could drastically improve survival rates for patients with advanced cancer...' },
+    { title: 'Global Renewable Energy Adoption Soars', content: 'As countries strive to meet their climate goals, the adoption of renewable energy technologies has reached unprecedented levels, signaling a shift towards a greener, more sustainable future...' },
+    { title: '5G Technology Revolutionizes Internet Connectivity', content: 'The rollout of 5G networks has begun, promising faster internet speeds, lower latency, and a wide range of applications that will reshape industries across the globe...' },
+    // Add more news items here if needed...
+  ];
+
+  const newsPerPage = 5;
+  const [currentPage, setCurrentPage] = useState(1);
+  const totalPages = Math.ceil(allNews.length / newsPerPage);
+
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+
+  const currentNews = allNews.slice((currentPage - 1) * newsPerPage, currentPage * newsPerPage);
 
   return (
     <div className="container news-section p-4">
@@ -147,35 +167,42 @@ const NewsSection = () => {
                 role="tabpanel"
                 aria-labelledby="all-news-tab"
               >
-                <div className="mt-3 tab-data">
-                  <h6>Major Tech Company Announces Revolutionary AI Product</h6>
-                  <p>
-                    In a groundbreaking announcement today, the tech giant revealed their latest artificial intelligence
-                    innovation that promises to transform how we interact with technology...
-                  </p>
-                  <button 
-                    className="btn btn-primary me-2"
-                    onClick={handleGenerate}
-                  >
-                    Generate
-                  </button>
+                <div className="">
+                  {currentNews.map((news, index) => (
+                    <div className="mt-3 tab-data" key={index}>
+                      <a href="/#" className="text-decoration-none">
+                        <h6>{news.title}</h6>
+                        <p>{news.content}</p>
+                        <button 
+                          className="btn btn-primary me-2"
+                          onClick={handleGenerate}
+                        >
+                          Generate
+                        </button>
+                      </a>
+                    </div>
+                  ))}
                 </div>
-                <div className="mt-3 tab-data">
-                  <h6>Global Climate Summit Reaches Historic Agreement</h6>
-                  <p>
-                    World leaders have come together to sign a landmark climate accord that sets ambitious targets for
-                    reducing carbon emissions over the next decade...
-                  </p>
-                  <button 
-                    className="btn btn-primary me-2"
-                    onClick={handleGenerate}
-                  >
-                    Generate
-                  </button>
-                </div>
+
+                {/* Pagination */}
+                {totalPages > 1 && (
+                  <div className="pagination-container">
+                    <Pagination>
+                      {[...Array(totalPages)].map((_, index) => (
+                        <Pagination.Item
+                          key={index + 1}
+                          active={index + 1 === currentPage}
+                          onClick={() => handlePageChange(index + 1)}
+                        >
+                          {index + 1}
+                        </Pagination.Item>
+                      ))}
+                    </Pagination>
+                  </div>
+                )}
               </div>
 
-              {/* Other Tab Panels (unchanged) */}
+              {/* Other Tab Panels */}
               <div
                 className="tab-pane fade"
                 id="politics"
@@ -237,7 +264,6 @@ const NewsSection = () => {
                 alt="emoji" 
                 ref={imageRef} // Attach the ref to the image element
               />
-               {/* <img src={emojiUrl} alt="emoji" ref={imageRef} />  */}
             </div>
           </div>
         </Modal.Body>
@@ -246,58 +272,30 @@ const NewsSection = () => {
             <i className="fa fa-download" aria-hidden="true"></i>
           </button>
           <button className="btn btn-share" onClick={handleShare}>
-            <i className="fa fa-share-alt" aria-hidden="true"></i>
+            <i className="fa fa-share" aria-hidden="true"></i>
           </button>
         </Modal.Footer>
       </Modal>
 
+      {/* Share Modal */}
       <Modal show={showShareModal} onHide={closeShareModal}>
         <Modal.Header closeButton>
-          <Modal.Title>Share This Emoji</Modal.Title>
+          <Modal.Title>Share this Emoji</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <br/>
-          <div className="d-flex justify-content-center">
-            {/* Social Media Share Buttons */}
-            <div title="Facebook" style={{ display: 'inline-block' }}>
-              <FacebookShareButton url={imageRef.current ? imageRef.current.src : ''}>
-                <FacebookIcon size={32} round={true} />
-              </FacebookShareButton>
-            </div>
-            <div style={{ marginLeft: '15px', marginRight: '15px' }} />
-            <a
-              href={`https://twitter.com/intent/tweet?text=Check%20out%20this%20emoji&url=${encodeURIComponent(dynamicImageUrl)}`}
-              target="_blank" title="Twitter"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="twitter-x.png" // Twitter X Logo URL (SVG)
-                alt="Twitter X"
-                style={{ width: '32px', height: '32px', borderRadius: '20px'}} // Customize the size
-              />
-            </a>
-            <div style={{ marginLeft: '15px', marginRight: '15px' }} />
-            <div title="Whatsapp" style={{ display: 'inline-block' }}>
-              <WhatsappShareButton url={imageRef.current ? imageRef.current.src : ''}>
-                <WhatsappIcon size={32} round={true} />
-              </WhatsappShareButton>
-            </div>
-            <div style={{ marginLeft: '15px', marginRight: '15px' }} />
-            <a
-              href={`https://www.instagram.com/?url=${encodeURIComponent(imageRef.current ? imageRef.current.src : '')}`}
-              target="_blank"
-              rel="noopener noreferrer" title="Instagram"
-            >
-              <FaInstagram size={32} color="#E4405F" />
+          <div className="d-flex justify-content-center align-items-center">
+            <FacebookShareButton url={dynamicImageUrl}>
+              <FacebookIcon size={36} round />
+            </FacebookShareButton>
+            <WhatsappShareButton url={dynamicImageUrl}>
+              <WhatsappIcon size={36} round />
+            </WhatsappShareButton>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+              <FaInstagram size={36} style={{ color: '#E4405F', marginLeft: '15px' }} />
             </a>
           </div>
-          <br/>
         </Modal.Body>
-        <Modal.Footer>
-          <button className="btn btn-secondary" onClick={closeShareModal}>Close</button>
-        </Modal.Footer>
       </Modal>
-
     </div>
   );
 };

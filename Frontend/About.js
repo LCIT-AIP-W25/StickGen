@@ -5,7 +5,8 @@ const About = () => {
     <div className="about-page">
       <div className="container">
       {/* About Us Section */}
-      <div className="about-section text-center mt-5">
+      <div className="row about-section text-center mt-5">
+        <div className="about-text col-md-6">
         <br/><h2><b>About Us</b></h2><br/>
         <p>Our team consists of passionate developers, data scientists, and designers working together to build the 
           Real-Time News Analysis and Social Media Engagement System. With a combination of skills in backend development, 
@@ -15,6 +16,10 @@ const About = () => {
            user interaction with news and trends. Together, we’re focused on delivering an innovative, engaging experience for 
            users worldwide.
         </p>
+        </div>
+        <div className="about-image col-md-6">
+          <img src="about.jpg" alt="about" />
+        </div>
       </div><br/><br/>
       <hr/>
       {/* Our Technology Section */}
