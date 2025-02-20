@@ -1,19 +1,51 @@
-import React, { useState, useRef } from 'react';
-import { Row, Col, Modal, Pagination } from 'react-bootstrap';
-import TrendingTopics from './TrendingTopics';
-import SearchBar from './SearchBar';
-import { FacebookShareButton, FacebookIcon, WhatsappShareButton, WhatsappIcon} from 'react-share';
-import { FaInstagram } from 'react-icons/fa';
+import React, { useState, useRef, useEffect } from "react";
+import { Row, Col, Modal, Pagination } from "react-bootstrap";
+import TrendingTopics from "./TrendingTopics";
+import SearchBar from "./SearchBar";
+import Papa from "papaparse";
+import { FacebookShareButton, FacebookIcon } from "react-share";
+import { FaInstagram } from "react-icons/fa";
+import { WhatsappShareButton, WhatsappIcon } from "react-share";
 
 const NewsSection = () => {
-  // const [emojiUrl, setEmojiUrl] = useState('');
   const imageRef = useRef(null);
   const [showModal, setShowModal] = useState(false);
-  const [showShareModal, setShowShareModal] = useState(false); 
-  const dynamicImageUrl = imageRef.current ? imageRef.current.src : '';
+  const [showShareModal, setShowShareModal] = useState(false);
+  const [news, setNews] = useState([]);
+  const [filteredNews, setFilteredNews] = useState([]);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
+  const newsPerPage = 10;
+  const dynamicImageUrl = imageRef.current ? imageRef.current.src : "";
+
+  useEffect(() => {
+    fetch("/news_data.csv")
+      .then((response) => response.text())
+      .then((csvText) => {
+        Papa.parse(csvText, {
+          header: true,
+          skipEmptyLines: true,
+          complete: (result) => {
+            const filteredData = result.data.map(({ headline, link, short_description, date }) => ({
+              headline,
+              link,
+              short_description,
+              date,
+            }));
+            setNews(filteredData);
+            setFilteredNews(filteredData);
+          },
+        });
+      })
+      .catch((error) => console.error("Error loading CSV:", error));
+  }, []);
 
   const handleSearch = (query) => {
-    console.log('Search query:', query);
+    setSearchQuery(query);
+    const filtered = news.filter((item) =>
+      item.headline.toLowerCase().includes(query.toLowerCase())
+    );
+    setFilteredNews(filtered);
   };
 
   const handleGenerate = () => {
@@ -26,11 +58,11 @@ const NewsSection = () => {
 
   const handleDownload = () => {
     if (imageRef.current) {
-      const imageUrl = imageRef.current.src; // Get the image URL
-      const link = document.createElement('a'); // Create an anchor element
-      link.href = imageUrl; // Set the image URL as the href
-      link.download = 'emoji.png'; // Set the download file name
-      link.click(); // Trigger the download
+      const imageUrl = imageRef.current.src;
+      const link = document.createElement("a");
+      link.href = imageUrl;
+      link.download = "emoji.png";
+      link.click();
     }
   };
 
@@ -44,116 +76,69 @@ const NewsSection = () => {
   };
 
   // Pagination Logic
-  const allNews = [
-    { title: 'Major Tech Company Announces Revolutionary AI Product', content: 'In a groundbreaking announcement today, the tech giant revealed their latest artificial intelligence innovation that promises to transform how we interact with technology...' },
-    { title: 'Global Climate Summit Reaches Historic Agreement', content: 'World leaders have come together to sign a landmark climate accord that sets ambitious targets for reducing carbon emissions over the next decade...' },
-    { title: 'New Mobile App Disrupts E-commerce Industry', content: 'A new mobile app has emerged as a game-changer in the world of online shopping, offering a seamless experience for users and redefining the e-commerce landscape...' },
-    { title: 'SpaceX Launches Historic Mission to Mars', content: 'SpaceX has successfully launched its first crewed mission to Mars, marking a new era in space exploration and paving the way for future human colonization of the Red Planet...' },
-    { title: 'Breakthrough in Cancer Treatment Offers New Hope', content: 'Scientists have made a significant breakthrough in cancer treatment, discovering a novel therapy that could drastically improve survival rates for patients with advanced cancer...' },
-    { title: 'Global Renewable Energy Adoption Soars', content: 'As countries strive to meet their climate goals, the adoption of renewable energy technologies has reached unprecedented levels, signaling a shift towards a greener, more sustainable future...' },
-    { title: '5G Technology Revolutionizes Internet Connectivity', content: 'The rollout of 5G networks has begun, promising faster internet speeds, lower latency, and a wide range of applications that will reshape industries across the globe...' },
-    // Add more news items here if needed...
-  ];
+  const totalPages = Math.ceil(filteredNews.length / newsPerPage);
 
-  const newsPerPage = 5;
-  const [currentPage, setCurrentPage] = useState(1);
-  const totalPages = Math.ceil(allNews.length / newsPerPage);
+  // Calculate the page range to be displayed (5 pages at a time)
+  const pagesToShow = 5;
+  const startPage = Math.max(1, currentPage - Math.floor(pagesToShow / 2));
+  const endPage = Math.min(totalPages, startPage + pagesToShow - 1);
+
+  const currentNews = filteredNews.slice((currentPage - 1) * newsPerPage, currentPage * newsPerPage);
 
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
   };
 
-  const currentNews = allNews.slice((currentPage - 1) * newsPerPage, currentPage * newsPerPage);
+  const handlePrevious = () => {
+    setCurrentPage(Math.max(1, currentPage - pagesToShow));
+  };
+
+  const handleNext = () => {
+    setCurrentPage(Math.min(totalPages, currentPage + pagesToShow));
+  };
+
+  const truncateDescription = (description) => {
+    const words = description.split(" ");
+    if (words.length > 50) {
+      return words.slice(0, 50).join(" ") + " ...";
+    }
+    return description;
+  };
 
   return (
     <div className="container news-section p-4">
       <Row>
-        <SearchBar onSearch={handleSearch} />
+        <SearchBar onSearch={handleSearch} value={searchQuery} />
         <Col lg={8} sm={12}>
           <div className="container mt-5">
             <ul className="nav nav-tabs" id="myTab" role="tablist">
-              {/* Existing Tab Items */}
               <li className="nav-item" role="presentation">
-                <button
-                  className="nav-link active"
-                  id="all-news-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#all-news"
-                  type="button"
-                  role="tab"
-                  aria-controls="all-news"
-                  aria-selected="true"
-                >
+                <button className="nav-link active" id="all-news-tab" data-bs-toggle="tab" data-bs-target="#all-news" type="button" role="tab" aria-controls="all-news" aria-selected="true">
                   All News
                 </button>
               </li>
               <li className="nav-item" role="presentation">
-                <button
-                  className="nav-link"
-                  id="politics-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#politics"
-                  type="button"
-                  role="tab"
-                  aria-controls="politics"
-                  aria-selected="false"
-                >
+                <button className="nav-link" id="politics-tab" data-bs-toggle="tab" data-bs-target="#politics" type="button" role="tab" aria-controls="politics" aria-selected="false">
                   Politics
                 </button>
               </li>
               <li className="nav-item" role="presentation">
-                <button
-                  className="nav-link"
-                  id="entertainment-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#entertainment"
-                  type="button"
-                  role="tab"
-                  aria-controls="entertainment"
-                  aria-selected="false"
-                >
+                <button className="nav-link" id="entertainment-tab" data-bs-toggle="tab" data-bs-target="#entertainment" type="button" role="tab" aria-controls="entertainment" aria-selected="false">
                   Entertainment
                 </button>
               </li>
               <li className="nav-item" role="presentation">
-                <button
-                  className="nav-link"
-                  id="technology-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#technology"
-                  type="button"
-                  role="tab"
-                  aria-controls="technology"
-                  aria-selected="false"
-                >
+                <button className="nav-link" id="technology-tab" data-bs-toggle="tab" data-bs-target="#technology" type="button" role="tab" aria-controls="technology" aria-selected="false">
                   Technology
                 </button>
               </li>
               <li className="nav-item" role="presentation">
-                <button
-                  className="nav-link"
-                  id="sports-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#sports"
-                  type="button"
-                  role="tab"
-                  aria-controls="sports"
-                  aria-selected="false"
-                >
+                <button className="nav-link" id="sports-tab" data-bs-toggle="tab" data-bs-target="#sports" type="button" role="tab" aria-controls="sports" aria-selected="false">
                   Sports
                 </button>
               </li>
               <li className="nav-item" role="presentation">
-                <button
-                  className="nav-link"
-                  id="business-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#business"
-                  type="button"
-                  role="tab"
-                  aria-controls="business"
-                  aria-selected="false"
-                >
+                <button className="nav-link" id="business-tab" data-bs-toggle="tab" data-bs-target="#business" type="button" role="tab" aria-controls="business" aria-selected="false">
                   Business
                 </button>
               </li>
@@ -161,86 +146,63 @@ const NewsSection = () => {
 
             <div className="tab-content" id="myTabContent">
               {/* All News Tab Content */}
-              <div
-                className="tab-pane fade show active"
-                id="all-news"
-                role="tabpanel"
-                aria-labelledby="all-news-tab"
-              >
-                <div className="">
-                  {currentNews.map((news, index) => (
+              <div className="tab-pane fade show active" id="all-news" role="tabpanel" aria-labelledby="all-news-tab">
+                {currentNews.length > 0 ? (
+                  currentNews.map((item, index) => (
                     <div className="mt-3 tab-data" key={index}>
-                      <a href="/#" className="text-decoration-none">
-                        <h6>{news.title}</h6>
-                        <p>{news.content}</p>
-                        <button 
-                          className="btn btn-primary me-2"
-                          onClick={handleGenerate}
-                        >
-                          Generate
-                        </button>
+                      <a href={item.link} className="text-decoration-none" target="_blank" rel="noopener noreferrer">
+                        <h6>{item.headline}</h6>
+                        <p>{truncateDescription(item.short_description)}</p>
                       </a>
+                      <button className="btn btn-primary me-2" onClick={handleGenerate}>Generate</button>
                     </div>
-                  ))}
-                </div>
+                  ))
+                ) : (
+                  <p>No results found.</p>
+                )}
 
                 {/* Pagination */}
                 {totalPages > 1 && (
                   <div className="pagination-container">
                     <Pagination>
-                      {[...Array(totalPages)].map((_, index) => (
-                        <Pagination.Item
-                          key={index + 1}
-                          active={index + 1 === currentPage}
-                          onClick={() => handlePageChange(index + 1)}
-                        >
-                          {index + 1}
-                        </Pagination.Item>
-                      ))}
+                      {/* Previous Button */}
+                      <Pagination.Prev onClick={handlePrevious} disabled={currentPage === 1} />
+
+                      {/* Page Numbers */}
+                      {[...Array(endPage - startPage + 1)].map((_, index) => {
+                        const pageNumber = startPage + index;
+                        return (
+                          <Pagination.Item
+                            key={pageNumber}
+                            active={pageNumber === currentPage}
+                            onClick={() => handlePageChange(pageNumber)}
+                          >
+                            {pageNumber}
+                          </Pagination.Item>
+                        );
+                      })}
+
+                      {/* Next Button */}
+                      <Pagination.Next onClick={handleNext} disabled={currentPage === totalPages} />
                     </Pagination>
                   </div>
                 )}
               </div>
 
               {/* Other Tab Panels */}
-              <div
-                className="tab-pane fade"
-                id="politics"
-                role="tabpanel"
-                aria-labelledby="politics-tab"
-              >
-                <p className="mt-3 ">Politics news content goes here.</p>
+              <div className="tab-pane fade" id="politics" role="tabpanel" aria-labelledby="politics-tab">
+                <p className="mt-3">Politics news content goes here.</p>
               </div>
-              <div
-                className="tab-pane fade"
-                id="entertainment"
-                role="tabpanel"
-                aria-labelledby="entertainment-tab"
-              >
+              <div className="tab-pane fade" id="entertainment" role="tabpanel" aria-labelledby="entertainment-tab">
                 <p className="mt-3">Entertainment news content goes here.</p>
               </div>
-              <div
-                className="tab-pane fade"
-                id="technology"
-                role="tabpanel"
-                aria-labelledby="technology-tab"
-              >
+              <div className="tab-pane fade" id="technology" role="tabpanel" aria-labelledby="technology-tab">
                 <p className="mt-3">Technology news content goes here.</p>
               </div>
-              <div
-                className="tab-pane fade"
-                id="sports"
-                role="tabpanel"
-                aria-labelledby="sports-tab"
-              >
+              <div className="tab-pane fade" id="sports" role="tabpanel" aria-labelledby="sports-tab">
                 <p className="mt-3">Sports news content goes here.</p>
               </div>
-              <div
-                className="tab-pane fade"
-                id="business"
-                role="tabpanel"
-                aria-labelledby="business-tab"
-              >
+              <div className="tab-pane fade" id="business" role="tabpanel" aria-labelledby="business-tab">
                 <p className="mt-3">Business news content goes here.</p>
               </div>
             </div>
@@ -283,13 +245,25 @@ const NewsSection = () => {
           <Modal.Title>Share this Emoji</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <div className="d-flex justify-content-center align-items-center">
+          <div className="d-flex justify-content-center align-items-center" style={{ padding: '2rem 0rem' }}>
             <FacebookShareButton url={dynamicImageUrl}>
               <FacebookIcon size={36} round />
             </FacebookShareButton>
+            <div style={{ marginRight: '15px' }} />
             <WhatsappShareButton url={dynamicImageUrl}>
               <WhatsappIcon size={36} round />
             </WhatsappShareButton>
+            <a
+              href={`https://twitter.com/intent/tweet?text=Check%20out%20this%20emoji&url=${encodeURIComponent(dynamicImageUrl)}`}
+              target="_blank" title="Twitter"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="twitter-x.png" // Twitter X Logo URL (SVG)
+                alt="Twitter X"
+                style={{ width: '32px', height: '32px', marginLeft: '15px' , borderRadius: '20px'}} // Customize the size
+              />
+            </a>
             <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
               <FaInstagram size={36} style={{ color: '#E4405F', marginLeft: '15px' }} />
             </a>

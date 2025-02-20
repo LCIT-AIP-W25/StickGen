@@ -1,5 +1,26 @@
 /* General Styles */
-body {background-position: fixed;background-size: contain;margin: 0;display: flex;justify-content: center;align-items: center;overflow: hidden;}
+body {
+  background: url("./assets/background.gif") center center;
+  background-size: cover; /* Ensure it covers the full screen */
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative; /* Needed for the ::before overlay */
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:linear-gradient(to bottom, rgb(36 208 188 / 70%), rgb(3 38 38 / 56%)); /* Reduced opacity */
+  background-size: cover;
+  z-index: -1; /* Keep it behind content */
+}
 
 #root {
   width: 1300px;
@@ -189,7 +210,7 @@ body {
     }
     .tab-data p {
         font-size: 14px;
-        color: #6c757d;
+        color: #6c757d;text-align:justify;
     }
   
   .news-section .card {
