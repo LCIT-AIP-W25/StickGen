@@ -1,165 +1,244 @@
+#Code for Scraping URLs of News Articles from Indian Express
+
+# import time
+# import pandas as pd
+# from selenium import webdriver
+# from selenium.webdriver.common.by import By
+# from selenium.webdriver.support.ui import WebDriverWait
+# from selenium.webdriver.support import expected_conditions as EC
+
+# # Function to save data to CSV
+# def save_to_csv(data, filename):
+#     if data:  # Check if data is not empty
+#         unique_data = list(set(data))  # Remove duplicates
+#         df = pd.DataFrame(unique_data, columns=["url"])
+#         df.to_csv(filename, index=False, mode='a', header=not pd.io.common.file_exists(filename))
+#         print(f"Saved {len(unique_data)} unique URLs to {filename}")
+#     else:
+#         print("No data to save!")
+
+# # Function for manual login
+# def manual_login(login_url):
+#     chrome_options = webdriver.ChromeOptions()
+#     prefs = {"profile.managed_default_content_settings.images": 2}
+#     chrome_options.add_experimental_option("prefs", prefs)
+#     driver = webdriver.Chrome(options=chrome_options)
+
+#     driver.get(login_url)
+#     print("Please log in manually and then press Enter to continue...")
+#     input("Press Enter after logging in...")
+    
+#     return driver
+
+# # Function to scrape news URLs until the 'Next' button is not found
+# def news_headlines_url_1(category_link, news_count):
+#     chrome_options = webdriver.ChromeOptions()
+#     prefs = {"profile.managed_default_content_settings.images": 2}
+#     chrome_options.add_experimental_option("prefs", prefs)
+#     driver = webdriver.Chrome(options=chrome_options)
+
+#     try:
+#         driver.get(category_link)
+#         time.sleep(3)  # Wait for the page to load
+#     except Exception as e:
+#         print("Error loading page:", e)
+#         driver.quit()
+#         return []
+
+#     headlines_url_set = set()
+#     last_page = None  # Track the current page to detect page changes
+
+#     while len(headlines_url_set) < news_count:
+#         try:
+#             # Scroll to load the page dynamically
+#             driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+#             time.sleep(3)  # Wait for the page to load
+
+#             # Explicitly wait for the article links to appear
+#             elements = WebDriverWait(driver, 10).until(
+#                 EC.presence_of_all_elements_located((By.CSS_SELECTOR, "div.img-context>h2>a"))
+#             )
+            
+#             # Collect article URLs from the current page
+#             for element in elements:
+#                 headline_url = element.get_attribute("href")
+#                 if headline_url:
+#                     headlines_url_set.add(headline_url)
+
+#                 if len(headlines_url_set) >= news_count:
+#                     break  # Stop if we have enough URLs
+
+#             print(f"Collected {len(headlines_url_set)} URLs so far...")
+
+#             # Find the 'Next' button and click it using href
+#             try:
+#                 next_button = WebDriverWait(driver, 15).until(
+#                     EC.presence_of_element_located((By.XPATH, '//a[contains(@class,"next page-numbers")]'))
+#                 )
+                
+#                 # Get the href of the 'Next' button and click it to go to the next page
+#                 next_page_url = next_button.get_attribute("href")
+
+#                 if next_page_url:
+#                     print(f"Navigating to next page: {next_page_url}")
+#                     driver.get(next_page_url)  # Navigate to the next page
+#                     time.sleep(3)  # Wait for the page to load
+#                 else:
+#                     print("No more pages or 'Next' button not found.")
+#                     break  # Exit the loop if no 'Next' button is found
+
+#             except Exception:
+#                 print("No more pages or 'Next' button not found.")
+#                 break  # Exit the loop if no 'Next' button is found
+
+#         except Exception as e:
+#             print("Error scraping page:", e)
+#             break  # Stop if an error occurs
+
+#     driver.quit()
+
+#     # Save the scraped data to CSV when the loop finishes
+#     save_to_csv(list(headlines_url_set), "India_headlines_urls.csv")
+    
+#     return list(headlines_url_set)
+
+# # Category URL
+# category_url = "https://indianexpress.com/section/india/"
+
+# # Login URL for manual login
+# login_url = "https://indianexpress.com/login"
+
+# # Step 1: Log in manually
+# driver = manual_login(login_url)
+
+# # Step 2: Proceed with scraping after logging in
+# world_headlines_url = news_headlines_url_1(category_url, 2000)
+
+# print("Category data successfully scraped and saved!")
+
+
+
+#Code for Scraping News Articles from Indian Express From the Collected URLs
 import time
-import math
 import pandas as pd
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 from tqdm import tqdm
-from selenium.common.exceptions import NoSuchElementException, TimeoutException, NoSuchWindowException
+import os
 
-# Configure Selenium WebDriver for the main page (for categories)
-chrome_options = webdriver.ChromeOptions()
-prefs = {
-    "profile.managed_default_content_settings.images": 2,
-    "profile.managed_default_content_settings.videos": 2,
-    "profile.managed_default_content_settings.gifs": 2
-}
-chrome_options.add_experimental_option("prefs", prefs)
-driver = webdriver.Chrome(options=chrome_options)
+# Constants
+CSV_FILE = "political_headlines_urls.csv"
+OUTPUT_FILE = "political_data.csv"
+BATCH_SIZE = 200  # Number of URLs per batch
+LOGIN_URL = "https://indianexpress.com/login/"
+COOKIE_URL = "https://indianexpress.com/"  # URL to keep session active
+RETRY_LIMIT = 3  # Number of retries for each URL
 
-# Fetch URLs of different categories from the homepage
-def fetch_category_urls():
-    try:
-        driver.set_page_load_timeout(10)
-        driver.get("https://indianexpress.com/")
-    except Exception as e:
-        print("Error loading website:", e)
+# Function to read URLs from CSV
+def read_urls_from_csv(filename):
+    df = pd.read_csv(filename)
+    return df['url'].tolist()  # Assuming CSV has a column named 'url'
 
-    try:
-        business_section_url = driver.find_element(By.CSS_SELECTOR, "#navbar > li:nth-child(6) > a").get_attribute("href")
-        education_section_url = driver.find_element(By.CSS_SELECTOR, "#navbar > li:nth-child(13) > a").get_attribute("href")
-        sports_section_url = driver.find_element(By.CSS_SELECTOR, "#navbar > li:nth-child(8) > a").get_attribute("href")
-        tech_section_url = driver.find_element(By.CSS_SELECTOR, "#navbar > li:nth-child(12) > a").get_attribute("href")
-        entertainment_section_url = driver.find_element(By.CSS_SELECTOR, "#navbar > li:nth-child(7) > a").get_attribute("href")
-    except Exception as e:
-        print("Error fetching category URLs:", e)
-    
-    driver.quit()
+# Function to get last scraped URL
+def get_last_scraped_url(output_file):
+    if os.path.exists(output_file) and os.path.getsize(output_file) > 0:
+        df = pd.read_csv(output_file)
+        if 'url' in df.columns and not df['url'].empty:
+            return df['url'].tolist()  # Get list of already scraped URLs
+    return []
 
-    return {
-        "business": business_section_url,
-        "education": education_section_url,
-        "sports": sports_section_url,
-        "tech": tech_section_url,
-        "entertainment": entertainment_section_url
-    }
+# Function to open login page manually and store session cookies
+def manual_login(driver):
+    print(f"Opening login page: {LOGIN_URL}")
+    driver.get(LOGIN_URL)
+    input("Log in manually, then press Enter here to continue scraping...")  # Wait for manual login
+    cookies = driver.get_cookies()  # Save login session cookies
+    return cookies  
 
-# Save data to CSV
-def save_to_csv(data, filename):
-    df = pd.DataFrame(data, columns=["url"])  # Create a DataFrame with a single 'url' column
-    df.to_csv(filename, index=False, mode='a', header=not pd.io.common.file_exists(filename))  # Append to CSV if it exists
+# Function to keep session alive by visiting the homepage
+def keep_alive(driver, cookies):
+    driver.get(COOKIE_URL)  
+    for cookie in cookies:
+        driver.add_cookie(cookie)
+    driver.refresh()
+    print("Session refreshed to prevent timeout.")
 
-# Function to scrape news headlines from a category
-def news_headlines_url_1(category_link, news_count):
+# Function to scrape content from URLs in batches
+def scrape_urls(csv_file, output_file, batch_size):
+    all_urls = read_urls_from_csv(csv_file)
+    scraped_urls = get_last_scraped_url(output_file)
+
+    # Remove already scraped URLs from the list
+    url_list = [url for url in all_urls if url not in scraped_urls]
+    total_urls = len(url_list)
+
+    if total_urls == 0:
+        print("All URLs have already been scraped. Exiting.")
+        return
+
+    print(f"Resuming from {len(scraped_urls)}. {total_urls} URLs remaining.")
+
     chrome_options = webdriver.ChromeOptions()
-    prefs = {
-        "profile.managed_default_content_settings.images": 2,
-        "profile.managed_default_content_settings.videos": 2,
-        "profile.managed_default_content_settings.gifs": 2
-    }
+    prefs = {"profile.managed_default_content_settings.images": 2}
     chrome_options.add_experimental_option("prefs", prefs)
     driver = webdriver.Chrome(options=chrome_options)
-    try:
-        driver.set_page_load_timeout(15)
-        driver.get(category_link)
-    except Exception as e:
-        print(e)
-        pass
-    time.sleep(3)
-    driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
 
-    elements_per_page = 25
-    total_pages = math.ceil(news_count / elements_per_page)
-    headlines_url_list = []
+    # Open login page and save cookies
+    cookies = manual_login(driver)
 
-    for page in tqdm(range(total_pages), desc="Processing", unit="iteration"):
-        try:
-            elements = driver.find_elements(By.CSS_SELECTOR, "div.img-context>h2>a")  # Find the required web element
-            for element in elements:
-                if len(headlines_url_list) >= news_count:  # Breaks the loop if the list reaches needed quantity
-                    break
-                headline_url = element.get_attribute("href")  # Getting hyperlink from the web element
-                headlines_url_list.append(headline_url)
+    scraped_data = []
 
-            next_button = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, '//a[@class="next page-numbers"]')))
-            next_button.click()
+    for batch_start in range(0, total_urls, batch_size):
+        batch_urls = url_list[batch_start:batch_start + batch_size]
+        print(f"Processing batch {batch_start + 1} to {batch_start + len(batch_urls)} of {total_urls}")
 
-        except Exception as e:
-            print(e)
-            pass
+        for url in tqdm(batch_urls, desc="Scraping", unit="URL"):
+            attempt = 0
+            success = False
 
-    return headlines_url_list
+            while attempt < RETRY_LIMIT and not success:
+                try:
+                    driver.get(url)
+                    time.sleep(3)
 
-# Function to extract content from article pages
-def content_extraction(url_list, category):
-    chrome_options = webdriver.ChromeOptions()
-    prefs = {
-        "profile.managed_default_content_settings.images": 2,
-        "profile.managed_default_content_settings.videos": 2,
-        "profile.managed_default_content_settings.gifs": 2
-    }
-    chrome_options.add_experimental_option("prefs", prefs)
-    driver = webdriver.Chrome(options=chrome_options)
-    
-    # Lists for storing extracted data
-    headlines_list = []
-    description_list = []
-    content_list = []
+                    headline = driver.find_element(By.CSS_SELECTOR, "div:nth-child(1) > div > h1").text
+                    description = driver.find_element(By.CSS_SELECTOR, "div:nth-child(1) > div > h2").text
+                    content = driver.find_element(By.CSS_SELECTOR, "#pcl-full-content").text if driver.find_elements(By.CSS_SELECTOR, "#pcl-full-content") else ""
 
-    for url in tqdm(url_list, desc="Extracting Content", unit="URL"):
-        try:
-            driver.set_page_load_timeout(10)
-            driver.get(url)
-            time.sleep(3)
+                    # Extract date & time
+                    date_element = driver.find_element(By.CSS_SELECTOR, 'span[itemprop="dateModified"]')
+                    date_time = date_element.get_attribute("content") if date_element else ""
 
-            # Extract the content, title, and description
-            headline = driver.find_element(By.CSS_SELECTOR, "div:nth-child(1) > div > h1").text
-            description = driver.find_element(By.CSS_SELECTOR, "div:nth-child(1) > div > h2").text
-            content = driver.find_element(By.CSS_SELECTOR, "#pcl-full-content").text if driver.find_elements(By.CSS_SELECTOR, "#pcl-full-content") else ""
+                    scraped_data.append([headline, description, content, date_time, url])
+                    print(f"Scraped: {url}")
+                    success = True  # If successful, break retry loop
 
-            headlines_list.append(headline)
-            description_list.append(description)
-            content_list.append(content)
+                except Exception as e:
+                    attempt += 1
+                    print(f"Error scraping {url}, attempt {attempt}/{RETRY_LIMIT}: {e}")
+                    time.sleep(2)  # Wait before retrying
 
-            print(f"Extracted data from: {url}")
+            if not success:
+                print(f"Skipping {url} after {RETRY_LIMIT} failed attempts.")
+                scraped_data.append(["", "", "", "", url])  # Log failed URL
 
-        except Exception as e:
-            print(f"Error extracting data from {url}: {e}")
-            headlines_list.append("")
-            description_list.append("")
-            content_list.append("")
-
-    # Save extracted data to CSV row by row
-    for i in range(len(headlines_list)):
-        save_to_csv([{
-            'headline': headlines_list[i],
-            'description': description_list[i],
-            'content': content_list[i],
-            'url': url_list[i],
-            'category': category
-        }], "scraped_news_data.csv")
-
-    driver.quit()
-
-# Main process to fetch category URLs and scrape headlines/content
-def main():
-    # Fetch category URLs from the homepage
-    category_urls = fetch_category_urls()
-
-    for category, url in category_urls.items():
-        print(f"Scraping {category} category...")
+        # Save batch results incrementally
+        batch_df = pd.DataFrame(scraped_data, columns=['headline', 'description', 'content', 'date_time', 'url'])
+        batch_df['date_time'] = pd.to_datetime(batch_df['date_time'], errors='coerce')  # Convert to datetime
+        batch_df = batch_df.sort_values(by='date_time', ascending=False)  # Sort by latest date first
         
-        # Scrape headlines URLs for the current category (e.g., business, education)
-        headlines_urls = news_headlines_url_1(url, 2000)  # 2000 can be adjusted as per the required count
+        # Append new data to the CSV
+        batch_df.to_csv(output_file, mode='a', header=not os.path.exists(output_file), index=False)
+        print(f"Batch saved. Data saved to {output_file}")
 
-        # Save headlines URLs to CSV
-        save_to_csv(headlines_urls, f"{category}_headlines_urls.csv")
+        # Clear scraped data to avoid memory overflow
+        scraped_data.clear()
 
-        # Extract content for each article URL in the category
-        content_extraction(headlines_urls, category)
+        # Refresh session every batch
+        keep_alive(driver, cookies)
 
-    print("Full process completed successfully!")
+    driver.quit()
+    print(f"Scraping complete. Data saved to {output_file}")
 
-if __name__ == "__main__":
-    main()
+# Run scraper with batching
+scrape_urls(CSV_FILE, OUTPUT_FILE, BATCH_SIZE)
