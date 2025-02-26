@@ -8,18 +8,19 @@ import './style.css';
 import About from './components/About';
 import Dashboard from './components/Dashboard';
 import Home from './pages/Home';
+import TermsPrivacy from "./components/TermsPrivacy";
+import Contact from './components/Contact';
 
 function App() {
   return (
     <Router>
       <Header />
       <Routes>
-        {/* Home Page */}
         <Route path="/" element={<Home />} />
-
-        {/* About Page */}
         <Route path="/about" element={<About />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/terms-privacy" element={<TermsPrivacy />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </Router>
