@@ -9,7 +9,9 @@ import { WhatsappShareButton, WhatsappIcon } from "react-share";
 
 const NewsSection = () => {
   const imageRef = useRef(null);
+  const stickerRef = useRef(null);
   const [showModal, setShowModal] = useState(false);
+  const [showStickerModal, setShowStickerModal] = useState(false); // New state for Sticker Modal
   const [showShareModal, setShowShareModal] = useState(false);
   const [news, setNews] = useState([]);
   const [filteredNews, setFilteredNews] = useState([]);
@@ -17,6 +19,7 @@ const NewsSection = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const newsPerPage = 10;
   const dynamicImageUrl = imageRef.current ? imageRef.current.src : "";
+  const dynamicStickerUrl = stickerRef.current ? stickerRef.current.src : ""; // For sticker image URL
 
   useEffect(() => {
     fetch("/news_data.csv")
@@ -48,12 +51,20 @@ const NewsSection = () => {
     setFilteredNews(filtered);
   };
 
-  const handleGenerate = () => {
+  const handleGenerateEmoji = () => {
     setShowModal(true);
+  };
+
+  const handleGenerateSticker = () => {
+    setShowStickerModal(true); // Show sticker modal
   };
 
   const handleCloseModal = () => {
     setShowModal(false);
+  };
+
+  const handleCloseStickerModal = () => {
+    setShowStickerModal(false); // Close sticker modal
   };
 
   const handleDownload = () => {
@@ -66,24 +77,34 @@ const NewsSection = () => {
     }
   };
 
+  const handleDownloadSticker = () => {
+    if (stickerRef.current) {
+      const stickerUrl = stickerRef.current.src;
+      const link = document.createElement("a");
+      link.href = stickerUrl;
+      link.download = "sticker.png";
+      link.click();
+    }
+  };
+
   const handleShare = () => {
     setShowModal(false);
+    setShowStickerModal(false);
     setShowShareModal(true);
   };
 
   const closeShareModal = () => {
     setShowShareModal(false);
   };
+  
 
   // Pagination Logic
   const totalPages = Math.ceil(filteredNews.length / newsPerPage);
-
-  // Calculate the page range to be displayed (5 pages at a time)
   const pagesToShow = 5;
   const startPage = Math.max(1, currentPage - Math.floor(pagesToShow / 2));
   const endPage = Math.min(totalPages, startPage + pagesToShow - 1);
-
   const currentNews = filteredNews.slice((currentPage - 1) * newsPerPage, currentPage * newsPerPage);
+
 
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
@@ -154,7 +175,8 @@ const NewsSection = () => {
                         <h6>{item.headline}</h6>
                         <p>{truncateDescription(item.short_description)}</p>
                       </a>
-                      <button className="btn btn-primary me-2" onClick={handleGenerate}>Generate</button>
+                      <button className="btn btn-primary me-2" onClick={handleGenerateEmoji}>Generate Emoji</button>
+                      <button className="btn btn-secondary" onClick={handleGenerateSticker}>Generate Sticker</button>
                     </div>
                   ))
                 ) : (
@@ -165,10 +187,7 @@ const NewsSection = () => {
                 {totalPages > 1 && (
                   <div className="pagination-container">
                     <Pagination>
-                      {/* Previous Button */}
                       <Pagination.Prev onClick={handlePrevious} disabled={currentPage === 1} />
-
-                      {/* Page Numbers */}
                       {[...Array(endPage - startPage + 1)].map((_, index) => {
                         const pageNumber = startPage + index;
                         return (
@@ -181,8 +200,6 @@ const NewsSection = () => {
                           </Pagination.Item>
                         );
                       })}
-
-                      {/* Next Button */}
                       <Pagination.Next onClick={handleNext} disabled={currentPage === totalPages} />
                     </Pagination>
                   </div>
@@ -213,7 +230,7 @@ const NewsSection = () => {
         </Col>
       </Row>
 
-      {/* Generation Modal */}
+      {/* Emoji Generation Modal */}
       <Modal show={showModal} onHide={handleCloseModal}>
         <Modal.Header closeButton>
           <Modal.Title>Emoji</Modal.Title>
@@ -221,10 +238,10 @@ const NewsSection = () => {
         <Modal.Body>
           <div className="text-center">
             <div className="emoji-container my-4">
-              <img 
-                src="test.png" style={{ width: '300px', height: '300px' }}
-                alt="emoji" 
-                ref={imageRef} // Attach the ref to the image element
+              <img
+                src="emoji.jpg" style={{ width: '300px', height: '300px' }}
+                alt="emoji"
+                ref={imageRef}
               />
             </div>
           </div>
@@ -239,29 +256,55 @@ const NewsSection = () => {
         </Modal.Footer>
       </Modal>
 
+      {/* Sticker Generation Modal */}
+      <Modal show={showStickerModal} onHide={handleCloseStickerModal}>
+        <Modal.Header closeButton>
+          <Modal.Title>Sticker</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <div className="text-center">
+            <div className="sticker-container my-4">
+              <img
+                src="sticker.png" style={{ width: '300px', height: '300px' }}
+                alt="sticker"
+                ref={stickerRef}
+              />
+            </div>
+          </div>
+        </Modal.Body>
+        <Modal.Footer>
+          <button className="btn btn-download" onClick={handleDownloadSticker}>
+            <i className="fa fa-download" aria-hidden="true"></i>
+          </button>
+          <button className="btn btn-share" onClick={handleShare}>
+            <i className="fa fa-share" aria-hidden="true"></i>
+          </button>
+        </Modal.Footer>
+      </Modal>
+
       {/* Share Modal */}
       <Modal show={showShareModal} onHide={closeShareModal}>
         <Modal.Header closeButton>
-          <Modal.Title>Share this Emoji</Modal.Title>
+          <Modal.Title>Share this Emoji/Sticker</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <div className="d-flex justify-content-center align-items-center" style={{ padding: '2rem 0rem' }}>
-            <FacebookShareButton url={dynamicImageUrl}>
+            <FacebookShareButton url={dynamicImageUrl || dynamicStickerUrl}>
               <FacebookIcon size={36} round />
             </FacebookShareButton>
             <div style={{ marginRight: '15px' }} />
-            <WhatsappShareButton url={dynamicImageUrl}>
+            <WhatsappShareButton url={dynamicImageUrl || dynamicStickerUrl}>
               <WhatsappIcon size={36} round />
             </WhatsappShareButton>
             <a
-              href={`https://twitter.com/intent/tweet?text=Check%20out%20this%20emoji&url=${encodeURIComponent(dynamicImageUrl)}`}
+              href={`https://twitter.com/intent/tweet?text=Check%20out%20this%20emoji&url=${encodeURIComponent(dynamicImageUrl || dynamicStickerUrl)}`}
               target="_blank" title="Twitter"
               rel="noopener noreferrer"
             >
               <img
                 src="twitter-x.png" // Twitter X Logo URL (SVG)
                 alt="Twitter X"
-                style={{ width: '32px', height: '32px', marginLeft: '15px' , borderRadius: '20px'}} // Customize the size
+                style={{ width: '32px', height: '32px', marginLeft: '15px', borderRadius: '20px'}}
               />
             </a>
             <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
