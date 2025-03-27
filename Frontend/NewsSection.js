@@ -11,6 +11,7 @@ const NewsSection = () => {
   const imageRef = useRef(null);
   const stickerRef = useRef(null);
   const [showModal, setShowModal] = useState(false);
+  const [isLoading] = useState(true);
   const [showStickerModal, setShowStickerModal] = useState(false); // New state for Sticker Modal
   const [showShareModal, setShowShareModal] = useState(false);
   const [news, setNews] = useState([]);
@@ -52,8 +53,17 @@ const NewsSection = () => {
   };
 
   const handleGenerateEmoji = () => {
-    setShowModal(true);
+    localStorage.setItem("openModalAfterRefresh", "true"); // Set flag
+    window.location.reload(); // Refresh the page
   };
+  
+  // Open modal after refresh if the flag exists
+  useEffect(() => { 
+    if (localStorage.getItem("openModalAfterRefresh") === "true") {
+      setShowModal(true);
+      localStorage.removeItem("openModalAfterRefresh"); // Clear flag after opening modal
+    }
+  }, []);
 
   const handleGenerateSticker = () => {
     setShowStickerModal(true); // Show sticker modal
@@ -238,11 +248,19 @@ const NewsSection = () => {
         <Modal.Body>
           <div className="text-center">
             <div className="emoji-container my-4">
-              <img
-                src="emoji.jpg" style={{ width: '300px', height: '300px' }}
-                alt="emoji"
-                ref={imageRef}
-              />
+              {/* {isLoading ? ( 
+                <img
+                  src="https://i.pinimg.com/originals/d9/f2/15/d9f21515b1e38d83e94fdbce88f623b6.gif"
+                  style={{ width: "300px", height: "300px" }}
+                  alt="Loading..."
+                />
+               ) : (  */}
+                <img
+                  src="emoji.jpg" style={{ width: '300px', height: '300px'}}
+                  alt="emoji"
+                  ref={imageRef}
+                />
+              {/* )} */}
             </div>
           </div>
         </Modal.Body>
