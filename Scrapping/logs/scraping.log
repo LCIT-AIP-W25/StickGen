@@ -1,0 +1,1666 @@
+2025-05-21 12:46:14,741 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-21 12:46:14,742 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-21 12:46:14,752 - INFO -  * Restarting with stat
+2025-05-21 12:46:26,850 - WARNING -  * Debugger is active!
+2025-05-21 12:46:26,871 - INFO -  * Debugger PIN: 608-499-196
+2025-05-21 13:07:23,890 - INFO -  * Detected change in 'C:\\Users\\anjit\\news2buzz\\scraping\\reddit_scraper.py', reloading
+2025-05-21 13:07:25,767 - INFO -  * Restarting with stat
+2025-05-21 13:07:44,805 - WARNING -  * Debugger is active!
+2025-05-21 13:07:44,843 - INFO -  * Debugger PIN: 608-499-196
+2025-05-21 13:07:55,701 - INFO -  * Detected change in 'C:\\Users\\anjit\\news2buzz\\scraping\\twitter_scraper.py', reloading
+2025-05-21 13:07:56,271 - INFO -  * Restarting with stat
+2025-05-21 13:08:10,403 - WARNING -  * Debugger is active!
+2025-05-21 13:08:10,426 - INFO -  * Debugger PIN: 608-499-196
+2025-05-21 13:12:45,971 - INFO -  * Detected change in 'C:\\Users\\anjit\\news2buzz\\scraping\\twitter_scraper.py', reloading
+2025-05-21 13:12:46,897 - INFO -  * Restarting with stat
+2025-05-21 13:13:04,266 - WARNING -  * Debugger is active!
+2025-05-21 13:13:04,287 - INFO -  * Debugger PIN: 608-499-196
+2025-05-21 13:47:11,757 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-21 13:47:11,758 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-21 13:47:11,768 - INFO -  * Restarting with stat
+2025-05-21 13:47:25,319 - WARNING -  * Debugger is active!
+2025-05-21 13:47:25,341 - INFO -  * Debugger PIN: 608-499-196
+2025-05-21 13:48:40,722 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-21 13:48:40,722 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-21 13:48:40,730 - INFO -  * Restarting with stat
+2025-05-21 13:48:56,572 - WARNING -  * Debugger is active!
+2025-05-21 13:48:56,599 - INFO -  * Debugger PIN: 608-499-196
+2025-05-21 13:49:54,660 - INFO -  * Detected change in 'C:\\Users\\anjit\\news2buzz\\scraping\\newsapi_scraper.py', reloading
+2025-05-21 13:49:55,741 - INFO -  * Restarting with stat
+2025-05-21 13:50:16,805 - WARNING -  * Debugger is active!
+2025-05-21 13:50:16,835 - INFO -  * Debugger PIN: 608-499-196
+2025-05-21 13:50:57,326 - INFO -  * Detected change in 'C:\\Users\\anjit\\news2buzz\\app.py', reloading
+2025-05-21 13:50:58,049 - INFO -  * Restarting with stat
+2025-05-21 13:51:04,457 - WARNING -  * Debugger is active!
+2025-05-21 13:51:04,474 - INFO -  * Debugger PIN: 608-499-196
+2025-05-21 13:51:21,489 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-21 13:51:21,490 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-21 13:51:21,497 - INFO -  * Restarting with stat
+2025-05-21 13:51:28,123 - WARNING -  * Debugger is active!
+2025-05-21 13:51:28,201 - INFO -  * Debugger PIN: 608-499-196
+2025-05-21 13:51:35,350 - INFO - \U0001f504 Starting test scrape (NewsAPI only)
+2025-05-21 13:51:35,788 - ERROR - \u274c NewsAPI scraping failed: {'status': 'error', 'code': 'apiKeyInvalid', 'message': 'Your API key is invalid or incorrect. Check your key, or go to https://newsapi.org to create a free API key.'}
+2025-05-21 13:51:35,789 - INFO - \u2705 NewsAPI scraping complete
+2025-05-21 13:51:35,843 - INFO - \u2705 Merged CSV complete
+2025-05-21 13:51:35,845 - INFO - 127.0.0.1 - - [21/May/2025 13:51:35] "GET /run_scraping HTTP/1.1" 200 -
+2025-05-21 13:51:37,977 - INFO - 127.0.0.1 - - [21/May/2025 13:51:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-21 13:54:49,439 - INFO -  * Detected change in 'C:\\Users\\anjit\\news2buzz\\scraping\\newsapi_scraper.py', reloading
+2025-05-21 13:55:02,860 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-21 13:55:02,861 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-21 13:55:02,872 - INFO -  * Restarting with stat
+2025-05-21 13:55:11,342 - WARNING -  * Debugger is active!
+2025-05-21 13:55:11,367 - INFO -  * Debugger PIN: 608-499-196
+2025-05-21 13:55:12,438 - INFO - \U0001f504 Starting test scrape (NewsAPI only)
+2025-05-21 13:55:12,734 - INFO - \u2705 NewsAPI scraped 8 records
+2025-05-21 13:55:12,735 - INFO - \u2705 NewsAPI scraping complete
+2025-05-21 13:55:12,856 - INFO - \u2705 Merged CSV complete
+2025-05-21 13:55:12,858 - INFO - 127.0.0.1 - - [21/May/2025 13:55:12] "GET /run_scraping HTTP/1.1" 200 -
+2025-05-22 08:46:07,951 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-22 08:46:07,952 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 08:46:07,959 - INFO -  * Restarting with stat
+2025-05-22 08:46:11,849 - WARNING -  * Debugger is active!
+2025-05-22 08:46:11,866 - INFO -  * Debugger PIN: 608-499-196
+2025-05-22 08:50:20,660 - INFO - \U0001f504 Starting BBC scraper only
+2025-05-22 08:50:20,954 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:50:20,955 - INFO - \u2705 BBC scraping complete
+2025-05-22 08:50:20,971 - ERROR - \u274c BBC scraping failed: No columns to parse from file
+2025-05-22 08:50:20,972 - INFO - 127.0.0.1 - - [22/May/2025 08:50:20] "GET /run_bbc_scraping HTTP/1.1" 200 -
+2025-05-22 08:50:22,726 - INFO - 127.0.0.1 - - [22/May/2025 08:50:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-22 08:52:18,495 - INFO -  * Detected change in 'C:\\Users\\anjit\\news2buzz\\pipeline\\merge_csv.py', reloading
+2025-05-22 08:52:18,696 - INFO -  * Restarting with stat
+2025-05-22 08:52:22,307 - WARNING -  * Debugger is active!
+2025-05-22 08:52:22,329 - INFO -  * Debugger PIN: 608-499-196
+2025-05-22 08:52:39,327 - INFO -  * Detected change in 'C:\\Users\\anjit\\news2buzz\\scraping\\bbc_scraper.py', reloading
+2025-05-22 08:52:39,598 - INFO -  * Restarting with stat
+2025-05-22 08:52:44,374 - WARNING -  * Debugger is active!
+2025-05-22 08:52:44,392 - INFO -  * Debugger PIN: 608-499-196
+2025-05-22 08:52:55,332 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-22 08:52:55,332 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 08:52:55,338 - INFO -  * Restarting with stat
+2025-05-22 08:52:59,164 - WARNING -  * Debugger is active!
+2025-05-22 08:52:59,178 - INFO -  * Debugger PIN: 608-499-196
+2025-05-22 08:53:24,425 - INFO - \U0001f504 Starting BBC scraper only
+2025-05-22 08:53:24,770 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:53:25,040 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:53:25,355 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:53:25,657 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:53:25,956 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:53:26,219 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:53:26,559 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:53:26,806 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:53:27,073 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:53:27,315 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:53:27,597 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:53:27,887 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:53:28,212 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:53:28,469 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:53:28,682 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:53:29,026 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:53:29,246 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:53:29,510 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:53:29,733 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:53:29,982 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:53:30,264 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:53:30,528 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:53:30,933 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:53:31,146 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:53:31,467 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:53:31,684 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:53:32,086 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:53:32,377 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:53:32,668 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:53:33,129 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:53:33,402 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:53:33,615 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:53:34,084 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:55:32,978 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-22 08:55:32,979 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 08:55:32,983 - INFO -  * Restarting with stat
+2025-05-22 08:55:37,092 - WARNING -  * Debugger is active!
+2025-05-22 08:55:37,107 - INFO -  * Debugger PIN: 608-499-196
+2025-05-22 08:55:44,809 - INFO - \U0001f504 Starting BBC scraper only
+2025-05-22 08:55:44,809 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,810 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,810 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,810 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,811 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,811 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,812 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,812 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,812 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,816 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,817 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,817 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,817 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,818 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,818 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,818 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,818 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,818 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,819 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,819 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,819 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,819 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,819 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,820 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,820 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,820 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,820 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,820 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,820 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,821 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,821 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,821 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,821 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,821 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,821 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,821 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,823 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,823 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,823 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,823 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,823 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,823 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,823 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,823 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,823 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,823 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,824 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,824 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,824 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,824 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,824 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,824 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,824 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,825 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,825 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,825 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,826 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,826 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,826 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,826 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,826 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,827 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,827 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,827 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,827 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,827 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,827 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,827 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,827 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,828 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,828 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,828 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,828 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,828 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,829 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,829 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,829 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,829 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,829 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,829 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,830 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,830 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,830 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,831 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,831 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,831 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,831 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,832 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,832 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,832 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,832 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,832 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,832 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,833 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,833 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,833 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,833 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,833 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,833 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,833 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,833 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,834 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,834 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,834 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,834 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,834 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,834 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,834 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,834 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,835 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,835 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,835 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,835 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,835 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,835 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,835 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,836 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,836 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,836 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,837 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,837 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,837 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,837 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,837 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,837 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,837 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,837 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,839 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,839 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,839 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,839 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,839 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,840 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,840 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,840 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,840 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,840 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,840 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,840 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,840 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,841 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,841 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,841 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,841 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,841 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,841 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,841 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,841 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,841 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,841 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,842 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,842 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,842 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,842 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,842 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,842 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,843 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,843 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,843 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,843 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,843 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,843 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,843 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,844 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,844 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,844 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,844 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,844 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,844 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,844 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,845 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,845 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,845 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,845 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,845 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,845 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,845 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,845 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,846 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,846 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,846 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,846 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,848 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,849 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,849 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,849 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,850 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,850 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,850 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,850 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,850 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,850 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,851 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,851 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,851 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,851 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,852 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,852 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,852 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,852 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,853 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,853 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,853 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,853 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,853 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,853 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,853 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,853 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,854 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,854 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,854 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,854 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,854 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,854 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,854 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,854 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,855 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,855 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,855 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,855 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,855 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,855 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,855 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,855 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,856 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,856 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,856 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,856 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,856 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,856 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,856 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,856 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,857 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,857 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,857 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,857 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,857 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,858 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,858 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,858 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,858 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,858 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,858 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,858 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,858 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,859 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,859 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,859 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,859 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,859 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,859 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,859 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,859 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,860 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,860 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,860 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,860 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,860 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,860 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,860 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,860 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,861 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,861 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,861 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,861 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,861 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,862 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,862 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,862 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,862 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,863 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,863 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,863 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,863 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,864 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,865 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,865 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,865 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,865 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,865 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,866 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,866 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,866 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,866 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,866 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,866 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,866 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,867 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,867 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,867 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,867 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,867 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,867 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,867 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,867 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,868 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,868 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,868 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,868 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,868 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,868 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,868 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,868 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,869 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,869 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,869 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,869 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,869 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,869 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,869 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,869 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,870 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,870 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,870 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,870 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,870 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,870 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,870 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,871 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,871 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,871 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,871 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,871 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,871 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,871 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,871 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,872 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,872 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,872 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,872 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,872 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,872 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,872 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,873 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,873 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,873 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,874 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,874 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,874 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,874 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,874 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,874 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,875 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,875 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,875 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,875 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,875 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,875 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,875 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,876 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,876 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,876 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,876 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,876 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,876 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,876 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,876 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,876 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,877 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,877 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,877 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,877 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,877 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,877 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,877 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,878 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,878 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,878 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,878 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,878 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,878 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,879 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,879 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,879 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,879 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,879 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,880 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,880 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,880 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,881 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,881 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,881 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,882 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,883 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,883 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,883 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,883 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,883 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,883 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,883 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,884 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,884 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,884 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,884 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,884 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,884 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,885 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,885 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,885 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,885 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,885 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,886 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,886 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,886 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,886 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,886 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,887 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,887 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,887 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,887 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,887 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,888 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,888 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,888 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,888 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,888 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,888 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,888 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,889 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,889 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,889 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,889 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,889 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,889 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,889 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,889 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,890 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,890 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,890 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,890 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,890 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,890 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,890 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,890 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,890 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,891 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,891 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,891 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,891 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,891 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,891 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,891 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,892 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,892 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,892 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,892 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,892 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,892 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,892 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,893 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,893 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,893 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,893 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,893 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,893 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,893 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,893 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,894 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,894 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,894 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,894 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,894 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,894 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,894 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,895 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,895 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,895 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,895 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,895 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,895 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,895 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,895 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,896 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,896 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,896 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,897 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,897 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,898 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,898 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,899 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,899 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,899 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,899 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,899 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,899 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,901 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,901 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,901 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,901 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,901 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,901 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,901 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,901 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,901 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,902 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,902 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,902 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,902 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,902 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,902 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,902 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,902 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,903 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,903 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,903 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,903 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,903 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,903 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,903 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,904 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,904 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,904 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,904 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,904 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,904 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,904 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,904 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,905 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,905 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,905 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,905 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,905 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,905 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,906 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,906 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,906 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,906 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,906 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,906 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,907 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,907 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,907 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,907 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,907 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,907 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,907 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,908 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,908 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,908 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,908 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,908 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,908 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,908 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,909 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,909 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,909 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,909 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,909 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,909 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,911 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,911 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,911 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,911 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,911 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,911 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,911 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,911 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,912 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,912 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,912 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,912 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,912 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,912 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,912 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,912 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,913 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,913 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,913 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,913 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,913 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,913 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,915 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,915 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,915 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,916 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,916 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,916 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,916 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,916 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,916 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,916 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,916 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,917 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,917 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,917 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,917 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,917 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,917 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,917 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,917 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,918 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,918 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,918 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,918 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,918 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,918 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,918 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,918 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,919 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,919 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,919 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,919 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,919 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,919 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,919 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,919 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,919 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,920 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,920 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,920 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,920 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,920 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,920 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,920 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,921 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,921 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,921 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,922 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,922 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,922 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,922 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,922 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,923 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,923 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,923 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,923 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,923 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,923 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,923 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,923 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,924 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,924 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,924 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,924 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,924 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,924 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,925 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,925 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,925 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,925 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,925 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,925 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,925 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,925 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,926 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,926 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,926 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,926 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,926 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,926 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,927 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,927 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,927 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,927 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,927 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,927 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,927 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,928 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,928 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,928 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,928 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,928 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,928 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,929 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,929 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,929 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,929 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,929 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,929 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,929 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,930 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,930 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,930 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,930 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,930 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,931 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,931 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,931 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,931 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,931 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,931 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,932 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,932 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,932 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,932 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,932 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,933 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,933 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,933 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,933 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,934 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,934 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,934 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,934 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,934 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,934 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,934 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,936 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,936 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,936 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,936 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,936 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,936 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,937 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,937 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,937 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,937 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,937 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,937 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,937 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,937 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,938 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,938 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,938 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,938 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,938 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,938 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,939 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,939 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,939 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,939 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,939 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,939 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,939 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,940 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,940 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,940 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,940 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,940 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,940 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,940 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,941 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,941 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,941 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,941 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,941 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,941 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,941 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,941 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,942 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,942 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,942 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,942 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,942 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,942 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,943 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,943 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,943 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,943 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,943 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,943 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,943 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,944 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,944 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,944 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,944 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,945 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,945 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,945 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,946 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,946 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,946 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,946 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,947 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,947 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,948 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,948 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,948 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,949 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,949 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,949 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,949 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,949 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,949 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,949 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,949 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,950 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,950 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,950 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,950 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,950 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,950 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,950 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,950 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,950 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,952 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,952 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,952 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,952 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,952 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,952 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,952 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,953 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,953 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,953 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,953 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,953 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,953 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,953 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,954 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,954 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,954 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,954 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,954 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,954 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,954 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,954 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,955 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,955 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,955 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,955 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,955 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,955 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,955 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,956 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,956 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,956 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,956 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,956 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,956 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,956 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,957 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,957 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,957 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,957 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,958 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,958 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,958 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,958 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,958 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,959 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,959 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,959 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,959 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,959 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,959 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,959 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,960 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,960 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,960 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,960 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,960 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,960 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,960 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,961 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,961 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,961 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,961 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,961 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,962 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,962 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,962 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,962 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,962 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,962 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,962 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,962 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,963 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,963 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,963 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,963 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,963 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,964 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,964 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,964 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,965 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,965 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,965 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,965 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,966 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,966 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,966 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,966 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,966 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,967 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,967 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,967 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,967 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,967 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,967 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,967 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,967 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,968 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,968 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,968 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,968 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,968 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,968 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,968 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,968 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,969 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,969 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,969 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,969 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,969 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,969 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,970 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,970 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,970 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,970 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,971 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,971 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,971 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,971 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,971 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,971 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,971 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,972 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,972 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,972 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,972 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,972 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,972 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,972 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,973 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,973 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,973 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,973 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,973 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,973 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,973 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,973 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,974 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,974 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,974 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,974 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,974 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,974 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,974 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,974 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,974 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,975 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,975 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,975 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,975 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,975 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,975 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,975 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,976 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,976 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,976 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,976 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,976 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,976 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,976 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,976 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,977 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,977 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,977 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,977 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,977 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,977 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,977 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,977 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,978 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,978 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,978 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,978 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,978 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,978 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,979 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,979 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,979 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,979 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,979 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,980 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,981 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,981 - ERROR - \u274c BBC scraping failed: name 'res' is not defined
+2025-05-22 08:55:44,984 - ERROR - \u274c BBC scraping failed: maximum recursion depth exceeded while calling a Python object
+2025-05-22 08:55:44,985 - INFO - 127.0.0.1 - - [22/May/2025 08:55:44] "GET /run_bbc_scraping HTTP/1.1" 200 -
+2025-05-22 08:56:12,236 - INFO -  * Detected change in 'C:\\Users\\anjit\\news2buzz\\scraping\\bbc_scraper.py', reloading
+2025-05-22 08:56:12,455 - INFO -  * Restarting with stat
+2025-05-22 08:56:20,751 - WARNING -  * Debugger is active!
+2025-05-22 08:56:20,781 - INFO -  * Debugger PIN: 608-499-196
+2025-05-22 08:57:32,501 - INFO -  * Detected change in 'C:\\Users\\anjit\\news2buzz\\app.py', reloading
+2025-05-22 08:57:32,740 - INFO -  * Restarting with stat
+2025-05-22 08:57:37,344 - WARNING -  * Debugger is active!
+2025-05-22 08:57:37,358 - INFO -  * Debugger PIN: 608-499-196
+2025-05-22 08:57:55,071 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-22 08:57:55,071 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 08:57:55,084 - INFO -  * Restarting with stat
+2025-05-22 08:57:59,440 - WARNING -  * Debugger is active!
+2025-05-22 08:57:59,455 - INFO -  * Debugger PIN: 608-499-196
+2025-05-22 08:58:05,591 - INFO - \U0001f504 Starting BBC scraper only
+2025-05-22 08:58:05,907 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:58:06,124 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:58:06,397 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:58:06,688 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:58:07,039 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:58:07,291 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:58:07,605 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:58:07,850 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:58:08,426 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:58:08,744 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:58:08,991 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:58:09,276 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:58:09,662 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:58:09,995 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:58:10,584 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:58:10,912 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:58:11,288 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:58:11,569 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 08:59:51,665 - INFO - Retrieving https://api.pushshift.io/reddit/search/submission?q=AI&limit=1000
+2025-05-22 08:59:52,201 - INFO - Retrieved https://api.pushshift.io/reddit/search/submission?q=AI&limit=1000: 403
+2025-05-22 08:59:52,201 - INFO - Error retrieving https://api.pushshift.io/reddit/search/submission?q=AI&limit=1000: non-200 status code, retrying
+2025-05-22 08:59:52,202 - INFO - Waiting 1 seconds
+2025-05-22 08:59:53,203 - INFO - Retrieving https://api.pushshift.io/reddit/search/submission?q=AI&limit=1000
+2025-05-22 08:59:53,323 - INFO - Retrieved https://api.pushshift.io/reddit/search/submission?q=AI&limit=1000: 403
+2025-05-22 08:59:53,323 - INFO - Error retrieving https://api.pushshift.io/reddit/search/submission?q=AI&limit=1000: non-200 status code, retrying
+2025-05-22 08:59:53,324 - INFO - Waiting 2 seconds
+2025-05-22 08:59:55,326 - INFO - Retrieving https://api.pushshift.io/reddit/search/submission?q=AI&limit=1000
+2025-05-22 08:59:55,473 - INFO - Retrieved https://api.pushshift.io/reddit/search/submission?q=AI&limit=1000: 403
+2025-05-22 08:59:55,473 - INFO - Error retrieving https://api.pushshift.io/reddit/search/submission?q=AI&limit=1000: non-200 status code, retrying
+2025-05-22 08:59:55,473 - INFO - Waiting 4 seconds
+2025-05-22 08:59:59,475 - INFO - Retrieving https://api.pushshift.io/reddit/search/submission?q=AI&limit=1000
+2025-05-22 08:59:59,580 - INFO - Retrieved https://api.pushshift.io/reddit/search/submission?q=AI&limit=1000: 403
+2025-05-22 08:59:59,580 - ERROR - Error retrieving https://api.pushshift.io/reddit/search/submission?q=AI&limit=1000: non-200 status code
+2025-05-22 08:59:59,581 - CRITICAL - 4 requests to https://api.pushshift.io/reddit/search/submission?q=AI&limit=1000 failed, giving up.
+2025-05-22 08:59:59,581 - CRITICAL - Errors: non-200 status code, non-200 status code, non-200 status code, non-200 status code
+2025-05-22 08:59:59,583 - ERROR - \u274c Reddit scraping failed: 4 requests to https://api.pushshift.io/reddit/search/submission?q=AI&limit=1000 failed, giving up.
+2025-05-22 09:14:13,521 - ERROR - \u274c Reddit scraping failed: received 401 HTTP response
+2025-05-22 09:22:37,406 - INFO - \u2705 Reddit scraping (praw) successful. Records: 10
+2025-05-22 09:27:26,383 - INFO - \u2705 Reddit scraping (global) successful. Records: 10
+2025-05-22 09:30:43,590 - INFO - \u2705 Reddit scraping (global) successful. Records: 100
+2025-05-22 09:35:19,411 - INFO - Retrieving scroll page None
+2025-05-22 09:35:19,411 - INFO - Retrieving guest token
+2025-05-22 09:35:19,411 - INFO - Retrieving https://twitter.com/search?f=live&lang=en&q=news+OR+breaking+OR+update+OR+headline+lang%3Aen&src=spelling_expansion_revert_click
+2025-05-22 09:35:19,506 - INFO - Error retrieving https://twitter.com/search?f=live&lang=en&q=news+OR+breaking+OR+update+OR+headline+lang%3Aen&src=spelling_expansion_revert_click: SSLError(MaxRetryError("HTTPSConnectionPool(host='twitter.com', port=443): Max retries exceeded with url: /search?f=live&lang=en&q=news+OR+breaking+OR+update+OR+headline+lang%3Aen&src=spelling_expansion_revert_click (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)')))")), retrying
+2025-05-22 09:35:19,506 - INFO - Waiting 1 seconds
+2025-05-22 09:35:20,513 - INFO - Retrieving https://twitter.com/search?f=live&lang=en&q=news+OR+breaking+OR+update+OR+headline+lang%3Aen&src=spelling_expansion_revert_click
+2025-05-22 09:35:20,772 - INFO - Error retrieving https://twitter.com/search?f=live&lang=en&q=news+OR+breaking+OR+update+OR+headline+lang%3Aen&src=spelling_expansion_revert_click: SSLError(MaxRetryError("HTTPSConnectionPool(host='twitter.com', port=443): Max retries exceeded with url: /search?f=live&lang=en&q=news+OR+breaking+OR+update+OR+headline+lang%3Aen&src=spelling_expansion_revert_click (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)')))")), retrying
+2025-05-22 09:35:20,772 - INFO - Waiting 2 seconds
+2025-05-22 09:35:22,773 - INFO - Retrieving https://twitter.com/search?f=live&lang=en&q=news+OR+breaking+OR+update+OR+headline+lang%3Aen&src=spelling_expansion_revert_click
+2025-05-22 09:35:22,806 - INFO - Error retrieving https://twitter.com/search?f=live&lang=en&q=news+OR+breaking+OR+update+OR+headline+lang%3Aen&src=spelling_expansion_revert_click: SSLError(MaxRetryError("HTTPSConnectionPool(host='twitter.com', port=443): Max retries exceeded with url: /search?f=live&lang=en&q=news+OR+breaking+OR+update+OR+headline+lang%3Aen&src=spelling_expansion_revert_click (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)')))")), retrying
+2025-05-22 09:35:22,806 - INFO - Waiting 4 seconds
+2025-05-22 09:35:26,807 - INFO - Retrieving https://twitter.com/search?f=live&lang=en&q=news+OR+breaking+OR+update+OR+headline+lang%3Aen&src=spelling_expansion_revert_click
+2025-05-22 09:35:26,863 - ERROR - Error retrieving https://twitter.com/search?f=live&lang=en&q=news+OR+breaking+OR+update+OR+headline+lang%3Aen&src=spelling_expansion_revert_click: SSLError(MaxRetryError("HTTPSConnectionPool(host='twitter.com', port=443): Max retries exceeded with url: /search?f=live&lang=en&q=news+OR+breaking+OR+update+OR+headline+lang%3Aen&src=spelling_expansion_revert_click (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)')))"))
+2025-05-22 09:35:26,863 - CRITICAL - 4 requests to https://twitter.com/search?f=live&lang=en&q=news+OR+breaking+OR+update+OR+headline+lang%3Aen&src=spelling_expansion_revert_click failed, giving up.
+2025-05-22 09:35:26,863 - CRITICAL - Errors: SSLError(MaxRetryError("HTTPSConnectionPool(host='twitter.com', port=443): Max retries exceeded with url: /search?f=live&lang=en&q=news+OR+breaking+OR+update+OR+headline+lang%3Aen&src=spelling_expansion_revert_click (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)')))")), SSLError(MaxRetryError("HTTPSConnectionPool(host='twitter.com', port=443): Max retries exceeded with url: /search?f=live&lang=en&q=news+OR+breaking+OR+update+OR+headline+lang%3Aen&src=spelling_expansion_revert_click (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)')))")), SSLError(MaxRetryError("HTTPSConnectionPool(host='twitter.com', port=443): Max retries exceeded with url: /search?f=live&lang=en&q=news+OR+breaking+OR+update+OR+headline+lang%3Aen&src=spelling_expansion_revert_click (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)')))")), SSLError(MaxRetryError("HTTPSConnectionPool(host='twitter.com', port=443): Max retries exceeded with url: /search?f=live&lang=en&q=news+OR+breaking+OR+update+OR+headline+lang%3Aen&src=spelling_expansion_revert_click (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)')))"))
+2025-05-22 09:35:26,863 - ERROR - \u274c Twitter scraping failed: 4 requests to https://twitter.com/search?f=live&lang=en&q=news+OR+breaking+OR+update+OR+headline+lang%3Aen&src=spelling_expansion_revert_click failed, giving up.
+2025-05-22 09:38:50,588 - INFO - Retrieving scroll page None
+2025-05-22 09:38:50,588 - INFO - Retrieving guest token
+2025-05-22 09:38:50,588 - INFO - Retrieving https://twitter.com/search?f=live&lang=en&q=AI+lang%3Aen&src=spelling_expansion_revert_click
+2025-05-22 09:38:50,668 - INFO - Error retrieving https://twitter.com/search?f=live&lang=en&q=AI+lang%3Aen&src=spelling_expansion_revert_click: SSLError(MaxRetryError("HTTPSConnectionPool(host='twitter.com', port=443): Max retries exceeded with url: /search?f=live&lang=en&q=AI+lang%3Aen&src=spelling_expansion_revert_click (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)')))")), retrying
+2025-05-22 09:38:50,668 - INFO - Waiting 1 seconds
+2025-05-22 09:38:51,670 - INFO - Retrieving https://twitter.com/search?f=live&lang=en&q=AI+lang%3Aen&src=spelling_expansion_revert_click
+2025-05-22 09:38:51,723 - INFO - Error retrieving https://twitter.com/search?f=live&lang=en&q=AI+lang%3Aen&src=spelling_expansion_revert_click: SSLError(MaxRetryError("HTTPSConnectionPool(host='twitter.com', port=443): Max retries exceeded with url: /search?f=live&lang=en&q=AI+lang%3Aen&src=spelling_expansion_revert_click (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)')))")), retrying
+2025-05-22 09:38:51,723 - INFO - Waiting 2 seconds
+2025-05-22 09:38:53,725 - INFO - Retrieving https://twitter.com/search?f=live&lang=en&q=AI+lang%3Aen&src=spelling_expansion_revert_click
+2025-05-22 09:38:53,913 - INFO - Error retrieving https://twitter.com/search?f=live&lang=en&q=AI+lang%3Aen&src=spelling_expansion_revert_click: SSLError(MaxRetryError("HTTPSConnectionPool(host='twitter.com', port=443): Max retries exceeded with url: /search?f=live&lang=en&q=AI+lang%3Aen&src=spelling_expansion_revert_click (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)')))")), retrying
+2025-05-22 09:38:53,913 - INFO - Waiting 4 seconds
+2025-05-22 09:38:57,915 - INFO - Retrieving https://twitter.com/search?f=live&lang=en&q=AI+lang%3Aen&src=spelling_expansion_revert_click
+2025-05-22 09:38:57,967 - ERROR - Error retrieving https://twitter.com/search?f=live&lang=en&q=AI+lang%3Aen&src=spelling_expansion_revert_click: SSLError(MaxRetryError("HTTPSConnectionPool(host='twitter.com', port=443): Max retries exceeded with url: /search?f=live&lang=en&q=AI+lang%3Aen&src=spelling_expansion_revert_click (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)')))"))
+2025-05-22 09:38:57,967 - CRITICAL - 4 requests to https://twitter.com/search?f=live&lang=en&q=AI+lang%3Aen&src=spelling_expansion_revert_click failed, giving up.
+2025-05-22 09:38:57,967 - CRITICAL - Errors: SSLError(MaxRetryError("HTTPSConnectionPool(host='twitter.com', port=443): Max retries exceeded with url: /search?f=live&lang=en&q=AI+lang%3Aen&src=spelling_expansion_revert_click (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)')))")), SSLError(MaxRetryError("HTTPSConnectionPool(host='twitter.com', port=443): Max retries exceeded with url: /search?f=live&lang=en&q=AI+lang%3Aen&src=spelling_expansion_revert_click (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)')))")), SSLError(MaxRetryError("HTTPSConnectionPool(host='twitter.com', port=443): Max retries exceeded with url: /search?f=live&lang=en&q=AI+lang%3Aen&src=spelling_expansion_revert_click (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)')))")), SSLError(MaxRetryError("HTTPSConnectionPool(host='twitter.com', port=443): Max retries exceeded with url: /search?f=live&lang=en&q=AI+lang%3Aen&src=spelling_expansion_revert_click (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)')))"))
+2025-05-22 09:38:57,967 - ERROR - \u274c Twitter scraping failed: 4 requests to https://twitter.com/search?f=live&lang=en&q=AI+lang%3Aen&src=spelling_expansion_revert_click failed, giving up.
+2025-05-22 09:39:12,372 - INFO - Retrieving scroll page None
+2025-05-22 09:39:12,372 - INFO - Retrieving guest token
+2025-05-22 09:39:12,380 - INFO - Retrieving https://twitter.com/search?f=live&lang=en&q=AI+lang%3Aen&src=spelling_expansion_revert_click
+2025-05-22 09:39:12,429 - INFO - Error retrieving https://twitter.com/search?f=live&lang=en&q=AI+lang%3Aen&src=spelling_expansion_revert_click: SSLError(MaxRetryError("HTTPSConnectionPool(host='twitter.com', port=443): Max retries exceeded with url: /search?f=live&lang=en&q=AI+lang%3Aen&src=spelling_expansion_revert_click (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)')))")), retrying
+2025-05-22 09:39:12,429 - INFO - Waiting 1 seconds
+2025-05-22 09:39:13,431 - INFO - Retrieving https://twitter.com/search?f=live&lang=en&q=AI+lang%3Aen&src=spelling_expansion_revert_click
+2025-05-22 09:39:13,774 - INFO - Error retrieving https://twitter.com/search?f=live&lang=en&q=AI+lang%3Aen&src=spelling_expansion_revert_click: SSLError(MaxRetryError("HTTPSConnectionPool(host='twitter.com', port=443): Max retries exceeded with url: /search?f=live&lang=en&q=AI+lang%3Aen&src=spelling_expansion_revert_click (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)')))")), retrying
+2025-05-22 09:39:13,774 - INFO - Waiting 2 seconds
+2025-05-22 09:39:15,775 - INFO - Retrieving https://twitter.com/search?f=live&lang=en&q=AI+lang%3Aen&src=spelling_expansion_revert_click
+2025-05-22 09:39:15,933 - INFO - Error retrieving https://twitter.com/search?f=live&lang=en&q=AI+lang%3Aen&src=spelling_expansion_revert_click: SSLError(MaxRetryError("HTTPSConnectionPool(host='twitter.com', port=443): Max retries exceeded with url: /search?f=live&lang=en&q=AI+lang%3Aen&src=spelling_expansion_revert_click (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)')))")), retrying
+2025-05-22 09:39:15,933 - INFO - Waiting 4 seconds
+2025-05-22 09:39:19,935 - INFO - Retrieving https://twitter.com/search?f=live&lang=en&q=AI+lang%3Aen&src=spelling_expansion_revert_click
+2025-05-22 09:39:19,993 - ERROR - Error retrieving https://twitter.com/search?f=live&lang=en&q=AI+lang%3Aen&src=spelling_expansion_revert_click: SSLError(MaxRetryError("HTTPSConnectionPool(host='twitter.com', port=443): Max retries exceeded with url: /search?f=live&lang=en&q=AI+lang%3Aen&src=spelling_expansion_revert_click (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)')))"))
+2025-05-22 09:39:19,993 - CRITICAL - 4 requests to https://twitter.com/search?f=live&lang=en&q=AI+lang%3Aen&src=spelling_expansion_revert_click failed, giving up.
+2025-05-22 09:39:19,993 - CRITICAL - Errors: SSLError(MaxRetryError("HTTPSConnectionPool(host='twitter.com', port=443): Max retries exceeded with url: /search?f=live&lang=en&q=AI+lang%3Aen&src=spelling_expansion_revert_click (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)')))")), SSLError(MaxRetryError("HTTPSConnectionPool(host='twitter.com', port=443): Max retries exceeded with url: /search?f=live&lang=en&q=AI+lang%3Aen&src=spelling_expansion_revert_click (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)')))")), SSLError(MaxRetryError("HTTPSConnectionPool(host='twitter.com', port=443): Max retries exceeded with url: /search?f=live&lang=en&q=AI+lang%3Aen&src=spelling_expansion_revert_click (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)')))")), SSLError(MaxRetryError("HTTPSConnectionPool(host='twitter.com', port=443): Max retries exceeded with url: /search?f=live&lang=en&q=AI+lang%3Aen&src=spelling_expansion_revert_click (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)')))"))
+2025-05-22 09:39:19,993 - ERROR - \u274c Twitter scraping failed: 4 requests to https://twitter.com/search?f=live&lang=en&q=AI+lang%3Aen&src=spelling_expansion_revert_click failed, giving up.
+2025-05-22 10:02:36,889 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-22 10:02:36,890 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 10:02:36,894 - INFO -  * Restarting with stat
+2025-05-22 10:02:40,348 - WARNING -  * Debugger is active!
+2025-05-22 10:02:40,357 - INFO -  * Debugger PIN: 608-499-196
+2025-05-22 10:02:43,365 - INFO - \U0001f504 Starting BBC scraper only
+2025-05-22 10:02:43,812 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 10:02:43,814 - INFO - \u2705 BBC scraping complete
+2025-05-22 10:02:43,824 - ERROR - \u274c Failed reading data/temp_sources\bbc_2025-05-22.csv: No columns to parse from file
+2025-05-22 10:02:43,837 - INFO - \u2705 Final merged file saved. Rows: 0
+2025-05-22 10:02:43,837 - INFO - \u2705 Merged CSV complete
+2025-05-22 10:02:43,838 - INFO - 127.0.0.1 - - [22/May/2025 10:02:43] "GET /run_bbc_scraping HTTP/1.1" 200 -
+2025-05-22 10:03:25,893 - INFO - \U0001f504 Starting BBC scraper only
+2025-05-22 10:03:26,326 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 10:03:26,328 - INFO - \u2705 BBC scraping complete
+2025-05-22 10:03:26,382 - ERROR - \u274c Failed reading data/temp_sources\bbc_2025-05-22.csv: No columns to parse from file
+2025-05-22 10:03:26,391 - INFO - \u2705 Final merged file saved. Rows: 0
+2025-05-22 10:03:26,393 - INFO - \u2705 Merged CSV complete
+2025-05-22 10:03:26,393 - INFO - 127.0.0.1 - - [22/May/2025 10:03:26] "GET /run_bbc_scraping HTTP/1.1" 200 -
+2025-05-22 10:03:28,751 - INFO - \U0001f504 Starting BBC scraper only
+2025-05-22 10:03:29,098 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 10:03:29,105 - INFO - \u2705 BBC scraping complete
+2025-05-22 10:03:29,132 - ERROR - \u274c Failed reading data/temp_sources\bbc_2025-05-22.csv: No columns to parse from file
+2025-05-22 10:03:29,142 - INFO - \u2705 Final merged file saved. Rows: 0
+2025-05-22 10:03:29,144 - INFO - \u2705 Merged CSV complete
+2025-05-22 10:03:29,144 - INFO - 127.0.0.1 - - [22/May/2025 10:03:29] "GET /run_bbc_scraping HTTP/1.1" 200 -
+2025-05-22 10:03:33,668 - INFO - \U0001f504 Starting BBC scraper only
+2025-05-22 10:03:33,846 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 10:03:33,846 - INFO - \u2705 BBC scraping complete
+2025-05-22 10:03:33,846 - ERROR - \u274c Failed reading data/temp_sources\bbc_2025-05-22.csv: No columns to parse from file
+2025-05-22 10:03:33,867 - INFO - \u2705 Final merged file saved. Rows: 0
+2025-05-22 10:03:33,868 - INFO - \u2705 Merged CSV complete
+2025-05-22 10:03:33,869 - INFO - 127.0.0.1 - - [22/May/2025 10:03:33] "GET /run_bbc_scraping HTTP/1.1" 200 -
+2025-05-22 10:05:24,752 - INFO -  * Detected change in 'C:\\Users\\anjit\\news2buzz\\scraping\\bbc_scraper.py', reloading
+2025-05-22 10:05:25,003 - INFO -  * Restarting with stat
+2025-05-22 10:05:31,163 - WARNING -  * Debugger is active!
+2025-05-22 10:05:31,183 - INFO -  * Debugger PIN: 608-499-196
+2025-05-22 10:05:39,483 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-22 10:05:39,483 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 10:05:39,483 - INFO -  * Restarting with stat
+2025-05-22 10:05:45,182 - WARNING -  * Debugger is active!
+2025-05-22 10:05:45,198 - INFO -  * Debugger PIN: 608-499-196
+2025-05-22 10:05:45,707 - INFO - \U0001f504 Starting BBC scraper only
+2025-05-22 10:05:46,264 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 10:05:46,265 - INFO - \u2705 BBC scraping complete
+2025-05-22 10:05:46,282 - ERROR - \u274c Failed reading data/temp_sources\bbc_2025-05-22.csv: No columns to parse from file
+2025-05-22 10:05:46,287 - INFO - \u2705 Final merged file saved. Rows: 0
+2025-05-22 10:05:46,294 - INFO - \u2705 Merged CSV complete
+2025-05-22 10:05:46,296 - INFO - 127.0.0.1 - - [22/May/2025 10:05:46] "GET /run_bbc_scraping HTTP/1.1" 200 -
+2025-05-22 10:05:50,312 - INFO - \U0001f504 Starting BBC scraper only
+2025-05-22 10:05:50,496 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 10:05:50,496 - INFO - \u2705 BBC scraping complete
+2025-05-22 10:05:50,512 - ERROR - \u274c Failed reading data/temp_sources\bbc_2025-05-22.csv: No columns to parse from file
+2025-05-22 10:05:50,515 - INFO - \u2705 Final merged file saved. Rows: 0
+2025-05-22 10:05:50,515 - INFO - \u2705 Merged CSV complete
+2025-05-22 10:05:50,518 - INFO - 127.0.0.1 - - [22/May/2025 10:05:50] "GET /run_bbc_scraping HTTP/1.1" 200 -
+2025-05-22 10:09:35,116 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-22 10:09:35,116 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 10:09:35,122 - INFO -  * Restarting with stat
+2025-05-22 10:09:40,472 - WARNING -  * Debugger is active!
+2025-05-22 10:09:40,487 - INFO -  * Debugger PIN: 608-499-196
+2025-05-22 10:09:41,019 - INFO - 127.0.0.1 - - [22/May/2025 10:09:41] "[33mGET /run_bbc_scraping HTTP/1.1[0m" 404 -
+2025-05-22 10:09:44,296 - INFO - 127.0.0.1 - - [22/May/2025 10:09:44] "[33mGET /run_bbc_scraping HTTP/1.1[0m" 404 -
+2025-05-22 10:10:15,476 - INFO - 127.0.0.1 - - [22/May/2025 10:10:15] "[33mGET /run_bbc_scraping HTTP/1.1[0m" 404 -
+2025-05-22 10:12:04,072 - INFO - 127.0.0.1 - - [22/May/2025 10:12:04] "[33mGET /run_bbc_scraping HTTP/1.1[0m" 404 -
+2025-05-22 10:12:35,861 - INFO -  * Detected change in 'C:\\Users\\anjit\\news2buzz\\app.py', reloading
+2025-05-22 10:12:36,151 - INFO -  * Restarting with stat
+2025-05-22 10:12:41,201 - WARNING -  * Debugger is active!
+2025-05-22 10:12:41,214 - INFO -  * Debugger PIN: 608-499-196
+2025-05-22 10:12:51,253 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-22 10:12:51,253 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 10:12:51,259 - INFO -  * Restarting with stat
+2025-05-22 10:12:55,503 - WARNING -  * Debugger is active!
+2025-05-22 10:12:55,516 - INFO -  * Debugger PIN: 608-499-196
+2025-05-22 10:23:48,211 - INFO - \U0001f504 Starting BBC scraper only
+2025-05-22 10:23:49,208 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 10:23:49,210 - INFO - \u2705 BBC scraping complete
+2025-05-22 10:23:49,253 - ERROR - \u274c Failed reading data/temp_sources\bbc_2025-05-22.csv: No columns to parse from file
+2025-05-22 10:23:49,259 - INFO - \u2705 Final merged file saved. Rows: 0
+2025-05-22 10:23:49,269 - INFO - \u2705 Merged CSV complete
+2025-05-22 10:23:49,271 - INFO - 127.0.0.1 - - [22/May/2025 10:23:49] "GET /run_bbc_scraping HTTP/1.1" 200 -
+2025-05-22 10:35:05,181 - INFO -  * Detected change in 'C:\\Users\\anjit\\news2buzz\\scraping\\reddit_scraper.py', reloading
+2025-05-22 10:35:05,635 - INFO -  * Restarting with stat
+2025-05-22 10:35:12,447 - WARNING -  * Debugger is active!
+2025-05-22 10:35:12,463 - INFO -  * Debugger PIN: 608-499-196
+2025-05-22 10:35:45,722 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-22 10:35:45,730 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 10:35:45,730 - INFO -  * Restarting with stat
+2025-05-22 10:35:49,459 - WARNING -  * Debugger is active!
+2025-05-22 10:35:49,475 - INFO -  * Debugger PIN: 608-499-196
+2025-05-22 10:36:11,078 - INFO - \U0001f504 Starting BBC scraper only
+2025-05-22 10:36:11,777 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 10:36:11,780 - INFO - \u2705 BBC scraping complete
+2025-05-22 10:36:11,791 - ERROR - \u274c Failed reading data/temp_sources\bbc_2025-05-22.csv: No columns to parse from file
+2025-05-22 10:36:11,807 - INFO - \u2705 Final merged file saved. Rows: 0
+2025-05-22 10:36:11,807 - INFO - \u2705 Merged CSV complete
+2025-05-22 10:36:11,807 - INFO - 127.0.0.1 - - [22/May/2025 10:36:11] "GET /run_bbc_scraping HTTP/1.1" 200 -
+2025-05-22 10:38:50,725 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-22 10:38:50,725 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 10:38:50,727 - INFO -  * Restarting with stat
+2025-05-22 10:38:56,606 - WARNING -  * Debugger is active!
+2025-05-22 10:38:56,625 - INFO -  * Debugger PIN: 608-499-196
+2025-05-22 10:38:57,625 - INFO - \U0001f504 Starting BBC scraper only
+2025-05-22 10:38:58,009 - INFO - \u2705 BBC scraping successful. Records: 0
+2025-05-22 10:38:58,026 - INFO - \u2705 BBC scraping complete
+2025-05-22 10:38:58,048 - ERROR - \u274c Failed reading data/temp_sources\bbc_2025-05-22.csv: No columns to parse from file
+2025-05-22 10:38:58,052 - INFO - \u2705 Final merged file saved. Rows: 0
+2025-05-22 10:38:58,054 - INFO - \u2705 Merged CSV complete
+2025-05-22 10:38:58,054 - INFO - 127.0.0.1 - - [22/May/2025 10:38:58] "GET /run_bbc_scraping HTTP/1.1" 200 -
+2025-05-22 10:42:18,884 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-22 10:42:18,885 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 10:42:18,891 - INFO -  * Restarting with stat
+2025-05-22 10:42:25,569 - WARNING -  * Debugger is active!
+2025-05-22 10:42:25,583 - INFO -  * Debugger PIN: 608-499-196
+2025-05-22 10:42:26,166 - INFO - \U0001f504 Starting BBC scraper only
+2025-05-22 10:42:26,793 - INFO - \u2705 BBC scraping complete
+2025-05-22 10:42:26,941 - ERROR - \u274c Failed reading data/temp_sources\bbc_2025-05-22.csv: No columns to parse from file
+2025-05-22 10:42:26,982 - INFO - \u2705 Final merged file saved. Rows: 1
+2025-05-22 10:42:26,985 - INFO - \u2705 Merged CSV complete
+2025-05-22 10:42:26,985 - INFO - 127.0.0.1 - - [22/May/2025 10:42:26] "GET /run_bbc_scraping HTTP/1.1" 200 -
+2025-05-22 10:42:34,874 - INFO - \U0001f504 Starting BBC scraper only
+2025-05-22 10:42:35,079 - INFO - \u2705 BBC scraping complete
+2025-05-22 10:42:35,132 - ERROR - \u274c Failed reading data/temp_sources\bbc_2025-05-22.csv: No columns to parse from file
+2025-05-22 10:42:35,135 - INFO - \u2705 Final merged file saved. Rows: 1
+2025-05-22 10:42:35,138 - INFO - \u2705 Merged CSV complete
+2025-05-22 10:42:35,139 - INFO - 127.0.0.1 - - [22/May/2025 10:42:35] "GET /run_bbc_scraping HTTP/1.1" 200 -
+2025-05-22 10:47:48,504 - INFO -  * Detected change in 'C:\\Users\\anjit\\news2buzz\\scraping\\newsapi_scraper.py', reloading
+2025-05-22 10:47:48,849 - INFO -  * Restarting with stat
+2025-05-22 10:47:57,301 - WARNING -  * Debugger is active!
+2025-05-22 10:47:57,322 - INFO -  * Debugger PIN: 608-499-196
+2025-05-22 10:48:26,504 - INFO -  * Detected change in 'C:\\Users\\anjit\\news2buzz\\scraping\\newsapi_scraper.py', reloading
+2025-05-22 10:48:26,773 - INFO -  * Restarting with stat
+2025-05-22 10:48:31,800 - WARNING -  * Debugger is active!
+2025-05-22 10:48:31,811 - INFO -  * Debugger PIN: 608-499-196
+2025-05-22 10:48:44,088 - INFO -  * Detected change in 'C:\\Users\\anjit\\news2buzz\\scraping\\newsapi_scraper.py', reloading
+2025-05-22 10:48:44,467 - INFO -  * Restarting with stat
+2025-05-22 10:48:50,985 - WARNING -  * Debugger is active!
+2025-05-22 10:48:51,003 - INFO -  * Debugger PIN: 608-499-196
+2025-05-22 10:52:33,551 - INFO -  * Detected change in 'C:\\Users\\anjit\\news2buzz\\app.py', reloading
+2025-05-22 10:52:33,926 - INFO -  * Restarting with stat
+2025-05-22 11:02:40,650 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-22 11:02:40,652 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 11:02:40,656 - INFO -  * Restarting with stat
+2025-05-22 11:02:45,381 - WARNING -  * Debugger is active!
+2025-05-22 11:02:45,394 - INFO -  * Debugger PIN: 608-499-196
+2025-05-22 11:02:45,887 - INFO - 127.0.0.1 - - [22/May/2025 11:02:45] "[33mGET /run_bbc_scraping HTTP/1.1[0m" 404 -
+2025-05-22 11:02:48,901 - INFO - 127.0.0.1 - - [22/May/2025 11:02:48] "[33mGET /run_bbc_scraping HTTP/1.1[0m" 404 -
+2025-05-22 11:04:08,813 - INFO - \U0001f504 Starting all scrapers
+2025-05-22 11:04:09,672 - INFO - \u2705 NewsAPI scraped 31 records
+2025-05-22 11:04:11,334 - INFO - \u2705 Reddit scraping (global) successful. Records: 100
+2025-05-22 11:04:11,336 - INFO - \u2705 All scrapers completed
+2025-05-22 11:04:11,337 - ERROR - \u274c Error in scraping pipeline
+Traceback (most recent call last):
+  File "C:\Users\anjit\news2buzz\app.py", line 37, in run_all_scraping
+    merge_all_csvs()
+  File "C:\Users\anjit\news2buzz\pipeline\merge_csv.py", line 14, in merge_all_csvs
+    combined = pd.concat([pd.read_csv(f) for f in all_files], ignore_index=True)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjit\news2buzz\pipeline\merge_csv.py", line 14, in <listcomp>
+    combined = pd.concat([pd.read_csv(f) for f in all_files], ignore_index=True)
+                          ^^^^^^^^^^^^^^
+  File "C:\Users\anjit\news2buzz\venv\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjit\news2buzz\venv\Lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjit\news2buzz\venv\Lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjit\news2buzz\venv\Lib\site-packages\pandas\io\parsers\readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjit\news2buzz\venv\Lib\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "parsers.pyx", line 581, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+2025-05-22 11:04:11,426 - INFO - 127.0.0.1 - - [22/May/2025 11:04:11] "GET /run_all_scraping HTTP/1.1" 200 -
+2025-05-22 11:06:54,813 - INFO -  * Detected change in 'C:\\Users\\anjit\\news2buzz\\pipeline\\merge_csv.py', reloading
+2025-05-22 11:06:55,132 - INFO -  * Restarting with stat
+2025-05-22 11:07:06,408 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-22 11:07:06,408 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 11:07:06,415 - INFO -  * Restarting with stat
+2025-05-22 11:07:12,284 - WARNING -  * Debugger is active!
+2025-05-22 11:07:12,296 - INFO -  * Debugger PIN: 608-499-196
+2025-05-22 11:07:12,948 - INFO - \U0001f504 Starting all scrapers
+2025-05-22 11:07:13,177 - ERROR - \u274c Error in scraping pipeline
+Traceback (most recent call last):
+  File "C:\Users\anjit\news2buzz\app.py", line 32, in run_all_scraping
+    scrape_bbc()
+  File "C:\Users\anjit\news2buzz\scraping\bbc_scraper.py", line 36, in scrape_to_csv
+    with open("data/merged_news.csv", mode="w", newline="", encoding="utf-8") as file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'data/merged_news.csv'
+2025-05-22 11:07:13,179 - INFO - 127.0.0.1 - - [22/May/2025 11:07:13] "GET /run_all_scraping HTTP/1.1" 200 -
+2025-05-22 11:07:19,584 - INFO - \U0001f504 Starting all scrapers
+2025-05-22 11:07:19,811 - ERROR - \u274c Error in scraping pipeline
+Traceback (most recent call last):
+  File "C:\Users\anjit\news2buzz\app.py", line 32, in run_all_scraping
+    scrape_bbc()
+  File "C:\Users\anjit\news2buzz\scraping\bbc_scraper.py", line 36, in scrape_to_csv
+    with open("data/merged_news.csv", mode="w", newline="", encoding="utf-8") as file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'data/merged_news.csv'
+2025-05-22 11:07:19,813 - INFO - 127.0.0.1 - - [22/May/2025 11:07:19] "GET /run_all_scraping HTTP/1.1" 200 -
+2025-05-22 11:08:25,354 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-22 11:08:25,354 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 11:08:25,361 - INFO -  * Restarting with stat
+2025-05-22 11:08:31,407 - WARNING -  * Debugger is active!
+2025-05-22 11:08:31,425 - INFO -  * Debugger PIN: 608-499-196
+2025-05-22 11:08:32,117 - INFO - \U0001f504 Starting all scrapers
+2025-05-22 11:08:33,286 - INFO - \u2705 NewsAPI scraped 31 records
+2025-05-22 11:08:35,602 - INFO - \u2705 Reddit scraping (global) successful. Records: 100
+2025-05-22 11:08:35,602 - INFO - \u2705 All scrapers completed
+2025-05-22 11:08:35,612 - ERROR - \u274c Error in scraping pipeline
+Traceback (most recent call last):
+  File "C:\Users\anjit\news2buzz\app.py", line 37, in run_all_scraping
+    merge_all_csvs()
+  File "C:\Users\anjit\news2buzz\pipeline\merge_csv.py", line 17, in merge_all_csvs
+    df = pd.read_csv(file)
+         ^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjit\news2buzz\venv\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjit\news2buzz\venv\Lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjit\news2buzz\venv\Lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjit\news2buzz\venv\Lib\site-packages\pandas\io\parsers\readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjit\news2buzz\venv\Lib\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "parsers.pyx", line 581, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+2025-05-22 11:08:35,626 - INFO - 127.0.0.1 - - [22/May/2025 11:08:35] "GET /run_all_scraping HTTP/1.1" 200 -
+2025-05-22 11:12:29,176 - INFO -  * Detected change in 'C:\\Users\\anjit\\news2buzz\\scraping\\bbc_scraper.py', reloading
+2025-05-22 11:12:29,498 - INFO -  * Restarting with stat
+2025-05-22 11:12:36,114 - WARNING -  * Debugger is active!
+2025-05-22 11:12:36,136 - INFO -  * Debugger PIN: 608-499-196
+2025-05-22 11:12:48,715 - INFO -  * Detected change in 'C:\\Users\\anjit\\news2buzz\\scraping\\bbc_scraper.py', reloading
+2025-05-22 11:12:48,999 - INFO -  * Restarting with stat
+2025-05-22 11:12:55,546 - WARNING -  * Debugger is active!
+2025-05-22 11:12:55,569 - INFO -  * Debugger PIN: 608-499-196
+2025-05-22 11:15:06,210 - INFO -  * Detected change in 'C:\\Users\\anjit\\news2buzz\\scraping\\bbc_scraper.py', reloading
+2025-05-22 11:15:06,459 - INFO -  * Restarting with stat
+2025-05-22 11:16:03,986 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-22 11:16:03,986 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 11:16:04,003 - INFO -  * Restarting with stat
+2025-05-22 11:16:08,904 - WARNING -  * Debugger is active!
+2025-05-22 11:16:08,920 - INFO -  * Debugger PIN: 608-499-196
+2025-05-22 11:17:11,648 - INFO - \U0001f504 Starting all scrapers
+2025-05-22 11:17:13,377 - INFO - \u2705 NewsAPI scraped 31 records
+2025-05-22 11:17:14,803 - INFO - \u2705 Reddit scraping (global) successful. Records: 100
+2025-05-22 11:17:14,804 - INFO - \u2705 All scrapers completed
+2025-05-22 11:17:14,806 - ERROR - \u274c Error in scraping pipeline
+Traceback (most recent call last):
+  File "C:\Users\anjit\news2buzz\app.py", line 37, in run_all_scraping
+    merge_all_csvs()
+  File "C:\Users\anjit\news2buzz\pipeline\merge_csv.py", line 17, in merge_all_csvs
+    df = pd.read_csv(file)
+         ^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjit\news2buzz\venv\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjit\news2buzz\venv\Lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjit\news2buzz\venv\Lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjit\news2buzz\venv\Lib\site-packages\pandas\io\parsers\readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjit\news2buzz\venv\Lib\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "parsers.pyx", line 581, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+2025-05-22 11:17:14,820 - INFO - 127.0.0.1 - - [22/May/2025 11:17:14] "GET /run_all_scraping HTTP/1.1" 200 -
+2025-05-22 11:20:13,540 - INFO -  * Detected change in 'C:\\Users\\anjit\\news2buzz\\scraping\\bbc_scraper.py', reloading
+2025-05-22 11:20:13,770 - INFO -  * Restarting with stat
+2025-05-22 11:20:20,718 - WARNING -  * Debugger is active!
+2025-05-22 11:20:20,731 - INFO -  * Debugger PIN: 608-499-196
+2025-05-22 11:25:30,007 - INFO -  * Detected change in 'C:\\Users\\anjit\\news2buzz\\scraping\\bbc_scraper.py', reloading
+2025-05-22 11:25:30,411 - INFO -  * Restarting with stat
+2025-05-22 11:25:42,351 - WARNING -  * Debugger is active!
+2025-05-22 11:25:42,381 - INFO -  * Debugger PIN: 608-499-196
+2025-05-22 11:25:43,910 - INFO -  * Detected change in 'C:\\Users\\anjit\\news2buzz\\scraping\\newsapi_scraper.py', reloading
+2025-05-22 11:25:44,189 - INFO -  * Restarting with stat
+2025-05-22 11:28:12,270 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-22 11:28:12,270 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 11:28:12,286 - INFO -  * Restarting with stat
+2025-05-22 11:28:16,156 - WARNING -  * Debugger is active!
+2025-05-22 11:28:16,170 - INFO -  * Debugger PIN: 608-499-196
+2025-05-22 11:29:04,942 - INFO - \U0001f504 Starting all scrapers
+2025-05-22 11:29:07,080 - INFO - \u2705 All scrapers completed
+2025-05-22 11:29:07,266 - INFO - \u2705 Merging complete
+2025-05-22 11:29:07,268 - INFO - 127.0.0.1 - - [22/May/2025 11:29:07] "GET /run_all_scraping HTTP/1.1" 200 -
+2025-05-23 09:09:31,561 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-23 09:09:31,562 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-23 09:09:31,566 - INFO -  * Restarting with stat
+2025-05-23 09:09:35,887 - WARNING -  * Debugger is active!
+2025-05-23 09:09:35,926 - INFO -  * Debugger PIN: 608-499-196
+2025-05-23 09:10:12,674 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-23 09:10:12,674 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-23 09:10:12,690 - INFO -  * Restarting with stat
+2025-05-23 09:10:15,711 - WARNING -  * Debugger is active!
+2025-05-23 09:10:15,721 - INFO -  * Debugger PIN: 608-499-196
+2025-05-23 09:12:23,629 - INFO - \U0001f504 Starting all scrapers
+2025-05-23 09:12:24,802 - ERROR - \u274c Reddit scraping failed: received 403 HTTP response
+2025-05-23 09:12:31,238 - INFO - \u2705 All scrapers completed
+2025-05-23 09:12:31,542 - INFO - \u2705 Merging complete
+2025-05-23 09:12:31,543 - INFO - 127.0.0.1 - - [23/May/2025 09:12:31] "GET /run_all_scraping HTTP/1.1" 200 -
+2025-05-23 09:12:33,295 - INFO - 127.0.0.1 - - [23/May/2025 09:12:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-23 09:23:45,892 - INFO -  * Detected change in 'C:\\Users\\anjit\\news2buzz\\scraping\\reddit_scraper.py', reloading
+2025-05-23 09:23:46,292 - INFO -  * Restarting with stat
+2025-05-23 09:23:53,856 - WARNING -  * Debugger is active!
+2025-05-23 09:23:53,886 - INFO -  * Debugger PIN: 608-499-196
+2025-05-23 09:24:12,372 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-23 09:24:12,372 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-23 09:24:12,396 - INFO -  * Restarting with stat
+2025-05-23 09:24:19,109 - WARNING -  * Debugger is active!
+2025-05-23 09:24:19,134 - INFO -  * Debugger PIN: 608-499-196
+2025-05-23 09:24:20,386 - INFO - \U0001f504 Starting all scrapers
+2025-05-23 09:24:30,235 - INFO - \u2705 All scrapers completed
+2025-05-23 09:24:30,428 - INFO - \u2705 Merging complete
+2025-05-23 09:24:30,428 - INFO - 127.0.0.1 - - [23/May/2025 09:24:30] "GET /run_all_scraping HTTP/1.1" 200 -
+2025-05-23 10:40:27,613 - INFO -  * Detected change in 'C:\\Users\\anjit\\news2buzz\\scraping\\bbc_scraper.py', reloading
+2025-05-23 10:40:28,838 - INFO -  * Restarting with stat
+2025-05-23 10:40:45,362 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-23 10:40:45,362 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-23 10:40:45,376 - INFO -  * Restarting with stat
+2025-05-23 10:40:51,769 - WARNING -  * Debugger is active!
+2025-05-23 10:40:51,791 - INFO -  * Debugger PIN: 608-499-196
+2025-05-23 10:40:52,349 - INFO - \U0001f504 Starting all scrapers
+2025-05-23 10:40:53,323 - INFO - \u2705 BBC scraped 48 records
+2025-05-23 10:41:02,203 - INFO - \u2705 All scrapers completed
+2025-05-23 10:41:02,516 - ERROR - \u274c Error in scraping pipeline
+Traceback (most recent call last):
+  File "C:\Users\anjit\news2buzz\app.py", line 41, in run_all_scraping
+    merge_all_csvs()
+  File "C:\Users\anjit\news2buzz\pipeline\merge_csv.py", line 36, in merge_all_csvs
+    combined.to_csv(merged_file, index=False)
+  File "C:\Users\anjit\news2buzz\venv\Lib\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjit\news2buzz\venv\Lib\site-packages\pandas\core\generic.py", line 3967, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjit\news2buzz\venv\Lib\site-packages\pandas\io\formats\format.py", line 1014, in to_csv
+    csv_formatter.save()
+  File "C:\Users\anjit\news2buzz\venv\Lib\site-packages\pandas\io\formats\csvs.py", line 251, in save
+    with get_handle(
+         ^^^^^^^^^^^
+  File "C:\Users\anjit\news2buzz\venv\Lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+             ^^^^^
+PermissionError: [Errno 13] Permission denied: 'data/merged_news.csv'
+2025-05-23 10:41:02,737 - INFO - 127.0.0.1 - - [23/May/2025 10:41:02] "GET /run_all_scraping HTTP/1.1" 200 -
+2025-05-23 10:43:37,363 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-23 10:43:37,363 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-23 10:43:37,366 - INFO -  * Restarting with stat
+2025-05-23 10:43:42,414 - WARNING -  * Debugger is active!
+2025-05-23 10:43:42,428 - INFO -  * Debugger PIN: 608-499-196
+2025-05-23 10:43:54,993 - INFO - \U0001f504 Starting all scrapers
+2025-05-23 10:43:55,670 - INFO - \u2705 BBC scraped 48 records
+2025-05-23 10:44:06,958 - INFO - \u2705 All scrapers completed
+2025-05-23 10:44:07,222 - ERROR - \u274c Error in scraping pipeline
+Traceback (most recent call last):
+  File "C:\Users\anjit\news2buzz\app.py", line 41, in run_all_scraping
+    merge_all_csvs()
+  File "C:\Users\anjit\news2buzz\pipeline\merge_csv.py", line 36, in merge_all_csvs
+    combined.to_csv(merged_file, index=False)
+  File "C:\Users\anjit\news2buzz\venv\Lib\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjit\news2buzz\venv\Lib\site-packages\pandas\core\generic.py", line 3967, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjit\news2buzz\venv\Lib\site-packages\pandas\io\formats\format.py", line 1014, in to_csv
+    csv_formatter.save()
+  File "C:\Users\anjit\news2buzz\venv\Lib\site-packages\pandas\io\formats\csvs.py", line 251, in save
+    with get_handle(
+         ^^^^^^^^^^^
+  File "C:\Users\anjit\news2buzz\venv\Lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+             ^^^^^
+PermissionError: [Errno 13] Permission denied: 'data/merged_news.csv'
+2025-05-23 10:44:07,239 - INFO - 127.0.0.1 - - [23/May/2025 10:44:07] "GET /run_all_scraping HTTP/1.1" 200 -
+2025-05-23 10:44:50,322 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-23 10:44:50,322 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-23 10:44:50,322 - INFO -  * Restarting with stat
+2025-05-23 10:44:55,839 - WARNING -  * Debugger is active!
+2025-05-23 10:44:55,862 - INFO -  * Debugger PIN: 608-499-196
+2025-05-23 10:44:57,555 - INFO - \U0001f504 Starting all scrapers
+2025-05-23 10:44:57,852 - INFO - \u2705 BBC scraped 48 records
+2025-05-23 10:45:06,234 - INFO - \u2705 All scrapers completed
+2025-05-23 10:45:06,508 - INFO - \u2705 Merging complete
+2025-05-23 10:45:06,508 - INFO - 127.0.0.1 - - [23/May/2025 10:45:06] "GET /run_all_scraping HTTP/1.1" 200 -
+2025-05-23 12:56:24,806 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-23 12:56:24,806 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-23 12:56:24,806 - INFO -  * Restarting with stat
+2025-05-23 12:56:32,051 - WARNING -  * Debugger is active!
+2025-05-23 12:56:32,072 - INFO -  * Debugger PIN: 608-499-196
+2025-05-23 12:56:37,322 - INFO - \U0001f504 Starting all scrapers
+2025-05-23 12:56:37,706 - INFO - \u2705 BBC scraped 49 records
+2025-05-23 12:56:46,764 - INFO - \u2705 All scrapers completed
+2025-05-23 12:56:47,086 - INFO - \u2705 Merging complete
+2025-05-23 12:56:47,088 - INFO - 127.0.0.1 - - [23/May/2025 12:56:47] "GET /run_all_scraping HTTP/1.1" 200 -
+2025-05-25 22:30:28,227 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-25 22:30:28,232 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-25 22:30:28,241 - INFO -  * Restarting with stat
+2025-05-25 22:30:54,159 - WARNING -  * Debugger is active!
+2025-05-25 22:30:54,197 - INFO -  * Debugger PIN: 608-499-196
+2025-05-25 22:34:04,861 - INFO - \U0001f504 Starting all scrapers
+2025-05-25 22:34:18,466 - INFO - \u2705 BBC scraped 45 records
+2025-05-25 22:34:22,011 - ERROR - \u274c Reddit scraping failed: received 403 HTTP response
+2025-05-25 22:34:33,951 - INFO - \u2705 All scrapers completed
+2025-05-25 22:34:35,536 - INFO - \u2705 Merging complete
+2025-05-25 22:34:35,543 - INFO - 127.0.0.1 - - [25/May/2025 22:34:35] "GET /run_all_scraping HTTP/1.1" 200 -
+2025-05-25 22:34:37,657 - INFO - 127.0.0.1 - - [25/May/2025 22:34:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-26 21:57:53,426 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-26 21:57:53,439 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-26 21:57:53,450 - INFO -  * Restarting with stat
+2025-05-26 21:59:26,721 - WARNING -  * Debugger is active!
+2025-05-26 21:59:26,747 - INFO -  * Debugger PIN: 608-499-196
+2025-05-26 21:59:36,002 - INFO - \U0001f504 Starting all scrapers
+2025-05-26 21:59:36,156 - INFO - \U0001f504 Starting all scrapers
+2025-05-26 21:59:40,406 - INFO - \u2705 BBC scraped 51 records
+2025-05-26 21:59:40,433 - INFO - \u2705 BBC scraped 51 records
+2025-05-26 21:59:41,693 - ERROR - \u274c Reddit scraping failed: received 403 HTTP response
+2025-05-26 21:59:41,696 - ERROR - \u274c Reddit scraping failed: received 403 HTTP response
+2025-05-26 21:59:50,206 - INFO - \u2705 All scrapers completed
+2025-05-26 21:59:50,450 - INFO - \u2705 All scrapers completed
+2025-05-26 22:00:01,778 - INFO - \u2705 Merging complete
+2025-05-26 22:00:01,780 - INFO - 127.0.0.1 - - [26/May/2025 22:00:01] "GET /run_all_scraping HTTP/1.1" 200 -
+2025-05-26 22:00:01,841 - INFO - \u2705 Merging complete
+2025-05-26 22:00:01,843 - INFO - 127.0.0.1 - - [26/May/2025 22:00:01] "GET /run_all_scraping HTTP/1.1" 200 -
