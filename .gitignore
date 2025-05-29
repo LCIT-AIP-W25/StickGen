@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.ipynb_checkpoints/
+*.csv
+*.json
+.venv/
+env/
+*.log
+
+# Node
+node_modules/
+
+# Mac/VSCode/etc
+.DS_Store
+.vscode/
+
+# Ignore all CSV files
+*.csv
+
