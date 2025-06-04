@@ -1,9 +1,8 @@
 # Python
 __pycache__/
 *.py[cod]
-*.ipynb_checkpoints/
-*.csv
-*.json
+*.ipynb_checkpoints  # ✅ already a folder, remove trailing slash
+.env/
 .venv/
 env/
 *.log
@@ -15,6 +14,9 @@ node_modules/
 .DS_Store
 .vscode/
 
-# Ignore all CSV files
+# Ignore all CSV and JSON files
 *.csv
+*.json
 
+# Secrets
+scraping/reddit_secrets.py

@@ -1,40 +1,27 @@
-import feedparser
-import csv
-import os
+import snscrape.modules.reddit as reddit
+import pandas as pd
 from datetime import datetime
-import requests
-from io import BytesIO
+import os
 
 def scrape_to_csv():
-    feeds = [
-        'http://feeds.bbci.co.uk/news/rss.xml',
-        'https://rss.cbc.ca/lineup/topstories.xml'
-    ]
+    try:
+        print("🔄 Starting Reddit scrape without Pushshift (pure Python)...")
+        posts = []
+        for i, post in enumerate(reddit.RedditSearchScraper('subreddit:worldnews').get_items()):
+            if i >= 50:
+                break
+            posts.append({
+                "timestamp": post.date.isoformat(),
+                "title": post.title,
+                "summary": post.selftext[:250] if post.selftext else post.title,
+                "link": post.url,
+                "source": "reddit"
+            })
 
-    records = []
-
-    for url in feeds:
-        try:
-            response = requests.get(url, timeout=5)
-            response.raise_for_status()
-            feed = feedparser.parse(BytesIO(response.content))
-            for entry in feed.entries:
-                records.append({
-                    "timestamp": entry.published if "published" in entry else datetime.now().isoformat(),
-                    "title": entry.title.strip(),
-                    "summary": entry.title.strip()[:150] + "...",
-                    "link": entry.link.strip(),
-                    "source": "bbc_cbc_rss"
-                })
-        except Exception as e:
-            print(f"❌ Failed to fetch from {url}: {e}")
-
-    filename = f"data/temp_sources/rss_combined_{datetime.now().date()}.csv"
-    os.makedirs(os.path.dirname(filename), exist_ok=True)
-
-    with open(filename, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=["timestamp", "title", "summary", "link", "source"])
-        writer.writeheader()
-        writer.writerows(records)
-
-    print(f"✅ BBC + CBC RSS collected: {len(records)}")
+        os.makedirs("data/temp_sources", exist_ok=True)
+        output_csv = f"data/temp_sources/reddit_{datetime.now().date()}.csv"
+        pd.DataFrame(posts).to_csv(output_csv, index=False)
+        print(f"✅ Reddit scraping complete: {len(posts)} posts saved to {output_csv}")
+    
+    except Exception as e:
+        print(f"❌ Reddit scraping failed: {e}")
