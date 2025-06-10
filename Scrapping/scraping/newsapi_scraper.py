@@ -1,11 +1,13 @@
+# ✅ FIXED newsapi_scraper.py with pagination and topic limit
 from newsapi import NewsApiClient
 import pandas as pd
 from datetime import datetime
 import os
 import logging
 import time
+from bs4 import BeautifulSoup
+import requests
 
-# Setup logging
 log_folder = "logs"
 os.makedirs(log_folder, exist_ok=True)
 logging.basicConfig(
@@ -17,34 +19,48 @@ logging.basicConfig(
 def scrape_to_csv():
     try:
         newsapi = NewsApiClient(api_key='3c5d328a803b44c78e084511cb340611')
+        queries = [
+            "technology", "world", "business", "ai", "science", "climate change",
+            "finance", "sports", "cryptocurrency", "innovation"
+        ]
 
-        queries = ["technology", "world", "business", "ai", "science","environment", "climate change", "health", "politics", "economy", "finance", "sports", "entertainment", "gaming", "cryptocurrency", "blockchain", "innovation", "startups", "education", "travel", "lifestyle", "culture", "history", "artificial intelligence", "machine learning", "data science", "cybersecurity", "privacy", "social media", "internet of things", "5G", "quantum computing", "augmented reality", "virtual reality", "metaverse", "sustainability", "renewable energy", "space exploration", "robotics", "automation", "biotechnology", "genomics", "healthcare technology", "digital transformation", "cloud computing", "big data", "analytics", "e-commerce", "fintech", "edtech", "proptech"]
         print("🔍 Starting NewsAPI scraping...")
         all_articles = []
 
         for query in queries:
-            print(f"🔍 Fetching news for: {query}")
-            try:
-                response = newsapi.get_everything(
-                    q=query,
-                    language='en',
-                    sort_by='publishedAt',
-                    page_size=50,
-                )
-                articles = response.get('articles', [])
-                for a in articles:
-                    all_articles.append({
-                        'timestamp': a['publishedAt'] or datetime.now().isoformat(),
-                        'title': a['title'],
-                        'summary': a['description'] or "No summary available",
-                        'link': a['url'],
-                        'source': 'newsapi'
-                    })
+            for page in range(1, 6):  # Pages 1 to 5
+                print(f"🔍 Fetching '{query}', page {page}")
+                try:
+                    response = newsapi.get_everything(
+                        q=query,
+                        language='en',
+                        sort_by='publishedAt',
+                        page=page,
+                        page_size=20
+                    )
+                    articles = response.get('articles', [])
+                    for a in articles:
+                        try:
+                            article_resp = requests.get(a['url'], timeout=5)
+                            soup = BeautifulSoup(article_resp.text, "html.parser")
+                            paragraphs = soup.find_all("p")
+                            full_summary = " ".join(p.get_text() for p in paragraphs[:5]).strip().replace('\n', ' ')
+                            if len(full_summary) < 200:
+                                full_summary = a['description'] or "No summary available"
+                        except:
+                            full_summary = a['description'] or "No summary available"
 
-                time.sleep(1)  # polite delay to avoid rate-limiting
-            except Exception as e:
-                logging.warning(f"⚠️ Failed to fetch '{query}': {e}")
-                print(f"⚠️ Failed to fetch '{query}': {e}")
+                        all_articles.append({
+                            'timestamp': a.get('publishedAt', datetime.now().isoformat()),
+                            'title': a.get('title', 'No title'),
+                            'summary': full_summary,
+                            'link': a.get('url', ''),
+                            'source': 'newsapi'
+                        })
+                    time.sleep(1)
+                except Exception as e:
+                    logging.warning(f"⚠️ Failed to fetch '{query}' page {page}: {e}")
+                    break
 
         if all_articles:
             df = pd.DataFrame(all_articles).drop_duplicates(subset=["title"])
@@ -55,7 +71,6 @@ def scrape_to_csv():
             logging.info("✅ NewsAPI collected %d unique articles", len(df))
         else:
             print("⚠️ No NewsAPI articles collected.")
-            logging.warning("⚠️ No NewsAPI articles collected.")
 
     except Exception as e:
         logging.error("❌ NewsAPI scraping failed: %s", str(e))

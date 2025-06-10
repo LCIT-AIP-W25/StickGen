@@ -75,10 +75,11 @@ def scrape_to_csv():
                 driver.get(url)
                 time.sleep(3)
                 headline = driver.find_element(By.CSS_SELECTOR, "div:nth-child(1) > div > h1").text
-                description = driver.find_element(By.CSS_SELECTOR, "div:nth-child(1) > div > h2").text
                 content = driver.find_element(By.CSS_SELECTOR, "#pcl-full-content").text
                 date_element = driver.find_element(By.CSS_SELECTOR, 'span[itemprop="dateModified"]')
                 date_time = date_element.get_attribute("content") if date_element else ""
+                description = driver.find_element(By.CSS_SELECTOR, "#pcl-full-content").text
+
 
                 scraped_data.append({
                     "timestamp": date_time or datetime.now().isoformat(),
