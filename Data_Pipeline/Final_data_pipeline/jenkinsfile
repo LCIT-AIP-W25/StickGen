@@ -1,0 +1,60 @@
+pipeline {
+    agent any
+
+    environment {
+        DOCKER_COMPOSE_FILE = 'docker-compose.yml'
+    }
+
+    stages {
+        stage('Checkout Code') {
+            steps {
+                echo 'Checking out code...'
+                checkout scm
+            }
+        }
+
+        stage('Build Docker Images') {
+            steps {
+                echo 'Building Docker images...'
+                sh 'docker-compose build'
+            }
+        }
+
+        stage('Run Unit Tests') {
+            steps {
+                echo 'Running unit tests for producer...'
+                sh 'docker-compose exec producer python -m unittest discover -s tests'
+
+                echo 'Running unit tests for consumer...'
+                sh 'docker-compose exec consumer python -m unittest discover -s tests'
+            }
+        }
+
+        stage('Deploy Services') {
+            steps {
+                echo 'Deploying services...'
+                sh 'docker-compose up -d'
+            }
+        }
+
+        stage('Verify Services') {
+            steps {
+                echo 'Verifying services...'
+                sh 'docker-compose ps'
+            }
+        }
+    }
+
+    post {
+        always {
+            echo 'Cleaning up...'
+            sh 'docker-compose down'
+        }
+        success {
+            echo 'Pipeline completed successfully!'
+        }
+        failure {
+            echo 'Pipeline failed. Check logs for details.'
+        }
+    }
+}

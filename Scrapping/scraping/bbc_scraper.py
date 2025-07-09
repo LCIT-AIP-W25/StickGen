@@ -31,11 +31,30 @@ def scrape_to_csv():
             text = link.get_text(strip=True)
 
             if "/news/" in href and text and len(text.split()) > 4:
+<<<<<<< HEAD
                 headlines.append({
                     "timestamp": datetime.now().isoformat(),
                     "title": text,
                     "summary": text[:150] + "...",
                     "link": f"https://www.bbc.com{href}",
+=======
+                full_url = f"https://www.bbc.com{href}"
+
+                try:
+                    article_resp = requests.get(full_url, headers=headers, timeout=5)
+                    article_soup = BeautifulSoup(article_resp.text, "html.parser")
+                    paragraphs = article_soup.find_all("p")
+                    summary_text = " ".join(p.get_text() for p in paragraphs[:3])  # first 3 paragraphs
+                except Exception as fetch_error:
+                    logging.warning(f"⚠️ Could not fetch full article: {full_url}, error: {fetch_error}")
+                    summary_text = text
+
+                headlines.append({
+                    "timestamp": datetime.now().isoformat(),
+                    "title": text,
+                    "summary": summary_text if summary_text else text,
+                    "link": full_url,
+>>>>>>> 6e2e9f0c6c7363898fec9ebeee28917ae81e8b74
                     "source": "bbc"
                 })
 
