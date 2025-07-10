@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sticker Generator</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 40px;
+            text-align: center;
+        }
+        input[type=text] {
+            width: 300px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        input[type=submit] {
+            padding: 10px 20px;
+        }
+        img {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            max-width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h2>🖼️ Sticker Generator</h2>
+    <form method="POST">
+        <input type="text" name="prompt" placeholder="Enter a prompt..." required>
+        <input type="submit" value="Generate Sticker">
+    </form>
+
+    {% if image_file %}
+        <h3>Prompt: {{ prompt }}</h3>
+        <img src="{{ image_file }}" alt="Generated Sticker">
+    {% elif error %}
+        <p style="color:red;">{{ error }}</p>
+    {% endif %}
+</body>
+</html>
