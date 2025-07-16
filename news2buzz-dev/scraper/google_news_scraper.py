@@ -1,20 +1,14 @@
-# ✅ FIXED google_news_scraper.py with shared driver and error recovery
 import os
 import time
-import logging
-import pandas as pd
+import requests
+from bs4 import BeautifulSoup
 from datetime import datetime
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException, WebDriverException
-import requests
-from bs4 import BeautifulSoup
 
-OUTPUT_DIR = "data/temp_sources"
-OUTPUT_FILE = os.path.join(OUTPUT_DIR, "google_news.csv")
 TOPICS = ["technology", "business", "ai", "world", "innovation"]
 
 def setup_driver():
@@ -35,12 +29,10 @@ def get_summary_from_article(link):
     except:
         return ""
 
-def scrape_google_news():
-    logging.info("🔍 Starting Google News scraping")
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
-    all_data = []
-
+def scrape_to_json():
     driver = setup_driver()
+    articles = []
+
     for topic in TOPICS:
         try:
             print(f"\n🌐 Loading topic: {topic}")
@@ -48,39 +40,34 @@ def scrape_google_news():
             driver.get(url)
             WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.TAG_NAME, "article")))
             time.sleep(2)
-            articles = driver.find_elements(By.TAG_NAME, "article")
-            print(f"🔍 Found {len(articles)} articles for '{topic}'")
-            count = 0
-            for article in articles:
+            entries = driver.find_elements(By.TAG_NAME, "article")
+            print(f"🔍 Found {len(entries)} articles for '{topic}'")
+
+            for article in entries:
                 try:
                     a_tags = article.find_elements(By.TAG_NAME, "a")
                     title_elem = max(a_tags, key=lambda a: len(a.text.strip()), default=None)
                     if not title_elem or not title_elem.text.strip():
                         continue
+
                     title = title_elem.text.strip()
                     link = title_elem.get_attribute("href")
                     if link.startswith("./"):
                         link = "https://news.google.com" + link[1:]
+
                     summary = get_summary_from_article(link)
-                    all_data.append({
+
+                    articles.append({
                         "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
                         "title": title,
                         "summary": summary or title,
                         "link": link,
                         "source": "google_news",
-                        "topic": topic
+                        "topic": str(topic)
                     })
-                    count += 1
                 except Exception as e:
                     print(f"⚠️ Skipping article: {e}")
-            print(f"✅ {topic}: {count} collected.")
         except Exception as e:
             print(f"⚠️ Error loading topic '{topic}': {e}")
-
     driver.quit()
-    if all_data:
-        df = pd.DataFrame(all_data).drop_duplicates(subset=["title", "link"])
-        df.to_csv(OUTPUT_FILE, index=False)
-        print(f"\n✅ Scraped {len(df)} unique Google News headlines.")
-    else:
-        print("\n⚠️ No Google News articles scraped.")
+    return articles

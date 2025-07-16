@@ -1,15 +1,26 @@
 import snscrape.modules.reddit as reddit
-import pandas as pd
 from datetime import datetime
 import os
+import logging
 
-def scrape_to_csv():
+# Logging
+log_folder = "logs"
+os.makedirs(log_folder, exist_ok=True)
+logging.basicConfig(
+    filename=os.path.join(log_folder, "scraping.log"),
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s"
+)
+
+def scrape_to_json():
     try:
         print("🔄 Starting Reddit scrape without Pushshift (pure Python)...")
         posts = []
+
         for i, post in enumerate(reddit.RedditSearchScraper('subreddit:worldnews').get_items()):
             if i >= 50:
                 break
+
             posts.append({
                 "timestamp": post.date.isoformat(),
                 "title": post.title,
@@ -18,10 +29,11 @@ def scrape_to_csv():
                 "source": "reddit"
             })
 
-        os.makedirs("data/temp_sources", exist_ok=True)
-        output_csv = f"data/temp_sources/reddit_{datetime.now().date()}.csv"
-        pd.DataFrame(posts).to_csv(output_csv, index=False)
-        print(f"✅ Reddit scraping complete: {len(posts)} posts saved to {output_csv}")
-    
+        print(f"✅ Reddit scraping complete: {len(posts)} posts collected.")
+        logging.info("✅ Reddit scraping complete: %d posts", len(posts))
+        return posts
+
     except Exception as e:
         print(f"❌ Reddit scraping failed: {e}")
+        logging.error("❌ Reddit scraping failed: %s", str(e))
+        return []
