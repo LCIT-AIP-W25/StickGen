@@ -1,4 +1,0 @@
-FROM docker.elastic.co/logstash/logstash:8.12.1
-
-# Install MongoDB input plugin
-RUN bin/logstash-plugin install logstash-input-mongodb

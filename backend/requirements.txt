@@ -1,8 +1,0 @@
-torch==2.1.2
-diffusers==0.25.0
-transformers
-flask
-flask-cors
-elasticsearch
-accelerate
-redis
