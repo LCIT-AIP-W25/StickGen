@@ -1,78 +1,92 @@
-from flask import Flask, request, jsonify
-from transformers import pipeline, AutoTokenizer, AutoModelForCausalLM
+from flask import Flask, request, send_file, jsonify, render_template
+import torch
+from diffusers import StableDiffusionPipeline
+from peft import LoraConfig, get_peft_model, set_peft_model_state_dict
+import uuid
+import pandas as pd
+import os
 
 app = Flask(__name__)
 
-# Load TinyLlama model (CPU-efficient)
-model_name = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
-tokenizer = AutoTokenizer.from_pretrained(model_name)
-model = AutoModelForCausalLM.from_pretrained(model_name)
-text_gen = pipeline("text-generation", model=model, tokenizer=tokenizer)
+# ✅ Load model on CPU
+pipe = StableDiffusionPipeline.from_pretrained(
+    "runwayml/stable-diffusion-v1-5", torch_dtype=torch.float32
+).to("cpu")
 
-# Tone descriptions (tone → tone_style)
-tone_styles = {
-    "quirky": "funny, playful, and unexpected",
-    "sarcastic": "witty and ironic",
-    "serious": "professional and informative",
-    "activist": "urgent and emotional",
-    "corporate": "formal and brand-safe"
-}
+pipe.unet.eval()
+pipe.text_encoder.eval()
 
-# Format prompt by injecting brand, tone, tone_style, news
-def format_prompt(template, news, brand, tone):
-    tone_style = tone_styles.get(tone, tone)  # fallback if tone not in list
+# ✅ Load LoRA weights
+unet_config = LoraConfig(
+    r=8, lora_alpha=32,
+    target_modules=["attn1.to_q", "attn1.to_k", "attn1.to_v", "attn2.to_out.0"],
+    lora_dropout=0.1, bias="none"
+)
+clip_config = LoraConfig(
+    r=8, lora_alpha=32,
+    target_modules=["q_proj", "k_proj", "v_proj", "out_proj"],
+    lora_dropout=0.1, bias="none"
+)
+
+pipe.unet = get_peft_model(pipe.unet, unet_config).to("cpu")
+pipe.text_encoder = get_peft_model(pipe.text_encoder, clip_config).to("cpu")
+
+set_peft_model_state_dict(pipe.unet, torch.load("unet_lora.pth", map_location="cpu"))
+set_peft_model_state_dict(pipe.text_encoder, torch.load("text_encoder_lora.pth", map_location="cpu"))
+
+
+# 🔁 Batch generation for all news items
+def generate_stickers_for_all_news(csv_path="news_data.csv"):
     try:
-        return template.format(news=news, brand=brand, tone=tone, tone_style=tone_style)
-    except KeyError as e:
-        raise ValueError(f"Missing placeholder in template: {e}")
-
-# Generate post from prompt
-def generate_text(prompt, max_tokens=100):
-    result = text_gen(prompt, max_new_tokens=max_tokens, temperature=0.9)
-    return result[0]['generated_text'].strip()
-
-# Optional ReAct-style refinement
-def refine_text(initial_post, brand, tone):
-    review_prompt = f"""
-Here is a generated post:
-{initial_post}
-
-Does this match the tone '{tone}' and brand voice '{brand}'? If not, rewrite it to better reflect them.
-"""
-    result = text_gen(review_prompt, max_new_tokens=100)
-    return result[0]['generated_text'].strip()
-
-@app.route('/generate_post', methods=['POST'])
-def generate_post():
-    data = request.json
-    text = data.get("text")
-    tone = data.get("tone")
-    brand = data.get("brand")
-    template = data.get("template")
-    refine = data.get("refine", False)
-
-    if not all([text, tone, brand, template]):
-        return jsonify({"error": "Missing one or more required fields."}), 400
-
-    try:
-        prompt = format_prompt(template, text, brand, tone)
-        initial_post = generate_text(prompt)
-
-        if refine:
-            final_post = refine_text(initial_post, brand, tone)
-            return jsonify({
-                "generated_post": final_post,
-                "refined": True,
-                "prompt_used": prompt
-            })
-
-        return jsonify({
-            "generated_post": initial_post,
-            "refined": False,
-            "prompt_used": prompt
-        })
+        df = pd.read_csv(csv_path)
     except Exception as e:
-        return jsonify({"error": str(e)}), 500
+        return f"Failed to load CSV: {e}"
 
-if __name__ == '__main__':
+    if "id" not in df.columns or "news_text" not in df.columns:
+        return "CSV must have 'id' and 'news_text' columns."
+
+    output_log = []
+
+    for idx, row in df.iterrows():
+        news_id = str(row["id"])
+        prompt = str(row["news_text"])
+
+        try:
+            image = pipe(prompt).images[0]
+            filename = f"{news_id}_{uuid.uuid4().hex}.png"
+            filepath = os.path.join("static", filename)
+            image.save(filepath)
+            output_log.append({"news_id": news_id, "image_file": filepath})
+            print(f"[✅] Saved sticker for news_id {news_id} → {filepath}")
+        except Exception as err:
+            print(f"[❌] Error generating for news_id {news_id}: {err}")
+            output_log.append({"news_id": news_id, "error": str(err)})
+
+    return output_log
+
+
+@app.route("/", methods=["GET", "POST"])
+def home():
+    if request.method == "POST":
+        prompt = request.form.get("prompt")
+        if not prompt:
+            return render_template("index.html", error="Please enter a prompt.")
+
+        image = pipe(prompt).images[0]
+        filename = f"static/{uuid.uuid4().hex}.png"
+        image.save(filename)
+
+        return render_template("index.html", prompt=prompt, image_file=filename)
+
+    return render_template("index.html")
+
+
+# 🔗 Add new route to generate stickers from all news
+@app.route("/generate_all", methods=["GET"])
+def generate_all_news_stickers():
+    result = generate_stickers_for_all_news()
+    return jsonify(result)
+
+
+if __name__ == "__main__":
     app.run(debug=True)
