@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All News Stickers</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 40px;
+            text-align: center;
+        }
+        .sticker-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .sticker {
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            max-width: 300px;
+        }
+        .sticker img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h2>🖼️ All News Stickers</h2>
+    <div class="sticker-container">
+        {% for sticker in stickers %}
+        <div class="sticker">
+            <h4>{{ sticker.prompt }}</h4>
+            <img src="{{ url_for('static', filename=sticker.image_file.split('/')[-1]) }}">
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
