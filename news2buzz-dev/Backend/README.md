@@ -88,16 +88,21 @@ dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer
 
 dotnet ef database update
 
+
 # Run the application
 
 
-dotnet watch run                                                                                                                   
+dotnet watch run       
+
+
 wagger UI available at:
+
 
 ➡️ http://localhost:5269/swagger          
 
 
   📊 CSV Data Overview
+  
 
 The final_news.csv file contains pre-processed news articles enriched with:
 
@@ -112,8 +117,10 @@ Fake vs real prediction
 You can load this into the SQL Server database or use it for demo endpoints.         
 
 
+
   
   👩‍💻 Maintainers
+  
 
 Suraiya Jabeen – Backend Developer
 
@@ -137,11 +144,14 @@ The system uses a SQL Server database with Entity Framework Core migrations.
 [Users] 1 --- * [Feedback]
 [NewsArticles] 1 --- * [Feedback]
 
+
 ## 📫 Postman Collection
+
 
 📬 Postman Collection
 
 To test API endpoints, import this collection into [Postman](https://www.postman.com/):
+
 
 📁 [`Backend/docs/News2Buzz_Backend.postman_collection.json`](./docs/News2Buzz_Backend.postman_collection.json)
 
