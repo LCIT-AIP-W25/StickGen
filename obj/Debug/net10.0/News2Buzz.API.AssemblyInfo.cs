@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("News2Buzz.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a8f76e70c34efe319372b70a72675405246343b3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b8070b6dd766c29a510ec9b95d39522611d6c9a6")]
 [assembly: System.Reflection.AssemblyProductAttribute("News2Buzz.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("News2Buzz.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
