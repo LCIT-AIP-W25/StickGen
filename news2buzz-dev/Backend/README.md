@@ -44,14 +44,23 @@ Designed to support:
 
 ## 🗂 Folder Structure
 
+
 Backend/
+
 ├── Controllers/ # API route handlers
+
 ├── DTOs/ # Request/Response models
+
 ├── Models/ # DB and ML classes
+
 ├── Services/ # Business logic
+
 ├── Data/ # EF Core DB context & migrations
+
 ├── final_news.csv # Enriched news dataset
+
 ├── appsettings.json # Environment configuration
+
 └── README.md # You are here                                                                                                                                                                                                                          
 
 ## 🏃 Getting Started
@@ -94,9 +103,11 @@ The system uses a SQL Server database with Entity Framework Core migrations.
 - `Feedback` – (Planned) Captures user ratings for AI-generated posts
 
 ### Entity Relationship (ER) Snapshot:
+
 [Users] 1 --- * [ScheduledPosts]
 [Users] 1 --- * [Feedback]
 [NewsArticles] 1 --- * [Feedback]
+
 ## 📫 Postman Collection
 
 📬 Postman Collection
