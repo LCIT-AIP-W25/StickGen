@@ -80,8 +80,11 @@ dotnet restore
 # Package Installations
 
 dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore
+
 dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+
 dotnet add package Microsoft.EntityFrameworkCore.Tools
+
 dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer
 
 # Apply database migrations
@@ -89,6 +92,7 @@ dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer
 dotnet ef database update
 
 # Run the application
+
 
 dotnet watch run                                                                                                                   
 wagger UI available at:
@@ -105,7 +109,11 @@ Topic clusters
 
 Fake vs real prediction
 
-You can load this into the SQL Server database or use it for demo endpoints.                                                                                                                                                                             👩‍💻 Maintainers
+You can load this into the SQL Server database or use it for demo endpoints.         
+
+
+  
+  👩‍💻 Maintainers
 
 Suraiya Jabeen – Backend Developer
 
