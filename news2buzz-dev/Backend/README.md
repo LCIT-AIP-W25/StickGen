@@ -68,11 +68,17 @@ Backend/
 # Restore NuGet packages
 dotnet restore
 
+# Package Installations
+dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+dotnet add package Microsoft.EntityFrameworkCore.Tools
+dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer
+
 # Apply database migrations
 dotnet ef database update
 
 # Run the application
-dotnet run                                                                                                                   
+dotnet watch run                                                                                                                   
 wagger UI available at:
 ➡️ http://localhost:5269/swagger                                                                                                                                                                                                                         📊 CSV Data Overview
 The final_news.csv file contains pre-processed news articles enriched with:
@@ -86,6 +92,7 @@ Topic clusters
 Fake vs real prediction
 
 You can load this into the SQL Server database or use it for demo endpoints.                                                                                                                                                                             👩‍💻 Maintainers
+
 Suraiya Jabeen – Backend Developer
 
 Natish Kumar – Database & Testing
@@ -120,31 +127,5 @@ It includes:
 - User authentication flows
 - News filtering
 - CRUD for scheduled posts (planned)
-
-☁️ Deployment (Render / Azure)
-
-## ☁️ Deployment Options
-
-### 🔹 Render.com (Free Tier)
-
-1. Sign in to [Render](https://render.com/)
-2. Click **New Web Service**
-3. Connect your GitHub repo and select this project
-4. Set the build command:
-
-dotnet restore && dotnet build
-5. Set the start command:
-dotnet run --project news2buzz-dev/Backend/News2Buzz.API.csproj
-
-6. Set environment variables:
-- `ConnectionStrings__DefaultConnection` = `<your SQL Server string>`
-- `Jwt__Key`, `Jwt__Issuer`, etc.
-
-### 🔹 Azure App Service
-
-1. Create a new App Service (Windows-based)
-2. Set runtime to `.NET 10 (Preview)`
-3. Use Azure SQL Database for hosting
-4. Push using GitHub Actions or Azure DevOps
 
 
