@@ -5,13 +5,19 @@ The News2Buzz Backend API is a robust and scalable `.NET Core Web API` that powe
 ## ✅ Key Responsibilities
 
 ### 🔍 News Intelligence APIs
+
 Provide enriched news filtering and full-text search based on:
-- **Sentiment**: Positive, Negative, Neutral  
-- **Bias**: Left-wing, Right-wing, Neutral  
-- **Topic Modeling**: Detected via NLP/BERTopic models  
+
+- **Sentiment**: Positive, Negative, Neutral
+- 
+- **Bias**: Left-wing, Right-wing, Neutral
+- 
+- **Topic Modeling**: Detected via NLP/BERTopic models
+- 
 - **Truth Prediction**: Fake vs Real news (using LIAR dataset models)
 
 ### 🔐 Secure Authentication & Authorization
+
 Implements full JWT-based user authentication:
 - `POST /api/Auth/register` — Register users  
 - `POST /api/Auth/login` — Authenticate and return token  
@@ -19,12 +25,14 @@ Implements full JWT-based user authentication:
 - `POST /api/Auth/reset-password` — Reset user password securely  
 
 ### 🤖 AI Model Integration Hooks
+
 This backend provides endpoints and service scaffolds for:
 - **GPT-2 / LLaMA Text Generation** — Social post creation aligned to brand tone  
 - **Emoji Recommendation** — DeepMoji model or LLM-driven emoji sentiment  
 - **Sticker Generation** — Supports Stable Diffusion or custom image pipelines  
 
 ### 📆 Post Scheduling (Pluggable Infrastructure)
+
 Designed to support:
 - Future integration with post schedulers (e.g., Hootsuite, Buffer)
 - Queued post publishing via Kafka or Celery workers
@@ -66,9 +74,11 @@ Backend/
 ## 🏃 Getting Started
 
 # Restore NuGet packages
+
 dotnet restore
 
 # Package Installations
+
 dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore
 dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 dotnet add package Microsoft.EntityFrameworkCore.Tools
