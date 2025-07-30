@@ -1,6 +1,0 @@
-@News2Buzz.API_HostAddress = http://localhost:5269
-
-GET {{News2Buzz.API_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
