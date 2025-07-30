@@ -85,12 +85,16 @@ dotnet add package Microsoft.EntityFrameworkCore.Tools
 dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer
 
 # Apply database migrations
+
 dotnet ef database update
 
 # Run the application
+
 dotnet watch run                                                                                                                   
 wagger UI available at:
+
 ➡️ http://localhost:5269/swagger                                                                                                                                                                                                                         📊 CSV Data Overview
+
 The final_news.csv file contains pre-processed news articles enriched with:
 
 Sentiment labels (positive, negative, neutral)
