@@ -9,11 +9,8 @@ The News2Buzz Backend API is a robust and scalable `.NET Core Web API` that powe
 Provide enriched news filtering and full-text search based on:
 
 - **Sentiment**: Positive, Negative, Neutral
-- 
 - **Bias**: Left-wing, Right-wing, Neutral
-- 
 - **Topic Modeling**: Detected via NLP/BERTopic models
-- 
 - **Truth Prediction**: Fake vs Real news (using LIAR dataset models)
 
 ### 🔐 Secure Authentication & Authorization
@@ -97,7 +94,10 @@ dotnet ef database update
 dotnet watch run                                                                                                                   
 wagger UI available at:
 
-➡️ http://localhost:5269/swagger                                                                                                                                                                                                                         📊 CSV Data Overview
+➡️ http://localhost:5269/swagger          
+
+
+  📊 CSV Data Overview
 
 The final_news.csv file contains pre-processed news articles enriched with:
 
